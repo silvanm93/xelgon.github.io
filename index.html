@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fight on multiple fronts in Holdfast: Nations At War - A competitive multiplayer first and third person shooter set during the Napoleonic Era">
+    <meta name="keywords" content="Nations At War, Holdfast, Nations At War, Holdfast: NaW, HF, NaW, Holdfast Game, Anvil Game Studios, AGS, Napoleonic Warfare, Napoleonic Wars, Napoleonic Era, Shooter, Naval Combat, Age of Sail, Sail Ships, Line battles, Musket, Napoleonic, Napoleon, British Empire, French Empire, History, Historical, Reenectment, Multiplayer, Game, Steam, PC, 1800, 19th Century, Anvil Forum, AGS Forum, Holdfast Forum">
+    <meta name="author" content="Anvil Game Studios">
+    <meta name="copyright" content="Anvil Game Studios">
+    <meta name="application-name" content="Holdfast: Nations at War">
+    
+    <title>Forge Work Duplex | LetgoSlow: UnclaimedLands at Peace</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,499;1,499&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav fixed-top"> 
+        <div class="container wider">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#home" ><img height="26px" width="52.78px" src="src/img/TopBar/TopBar_CompanyLogo.png" alt="anvil-menu-logo" /></a>
+            <div class="collapse navbar-collapse" id="mainmenu">
+                <ul class="nav nav-pills navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link link-color" href="https://store.steampowered.com/news/app/589290" ><img src="src/img/TopBar/TopBar_Button_Presskit.png" /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-color" href="https://discord.com/invite/holdfastgame" ><img src="src/img/TopBar/TopBar_Button_Discord.png" /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-color" href="#enlist"><img src="src/img/TopBar/TopBar_Button_BuyNow.png" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="overlay"></div>
+
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="src/vids/background.mp4" type="video/mp4">
+        </video>
+
+        <div class="d-flex justify-content-center align-items-center bg-info-subtle maincontent" id="maincontent"> 
+            <div class="w-100 con1">
+                <div class="container txtblck" id="home" data-vide-bg="src/vids/background">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <pre> </pre><pre> </pre>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                <img src="src/img/Holdfast_NaW_IP_Logo.webp" alt="holdfast-nations-at-war-logo" class="hfLogo img-fluid rounded mx-auto d-block">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-10 col-sm-10 col-xs-12 col-12">
+                            <!--
+                                copyright footer
+                                -> we are a community driven team etc
+                            -->
+                            <h1 class="title"></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
+                            <div class="mainButtonsContainer">
+                                <div class="mainWatchTrailer">
+                                    <a href="">
+                                        <img id="trailerOff" class="visible" src="src/img/TrailerPage/TrailerPage_Off_Button_WatchTrailer.png" />
+                                        <img id="trailerOn" class="hidden" src="src/img/TrailerPage/TrailerPage_On_Button_WatchTrailer.png" />
+                                    </a>
+                                </div>
+                                <div class="mainPlayHoldfast">
+                                    <a href="#enlist">
+                                        <img id="playOff" class="visible" src="src/img/TrailerPage/TrailerPage_Off_Button_PlayHoldfast.png" />
+                                        <img id="playOn" class="hidden" src="src/img/TrailerPage/TrailerPage_On_Button_PlayHoldfast.png" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <pre></pre>
+                    <p style="text-align: center;">--platform icons here?--</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="divider"></div>
+    <section class="d-flex justify-content-center align-items-center"> 
+        <div class="w-100 h-100 contentBG con4">
+            <div class="container">
+                <div class="spacer">
+                    <br />
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div id="enlist" class="enlist">
+                            <img src="src/img/EnlistTodayPage/EnlistToday_Whole.png" style="width: 100%;" />
+                        </div>
+                    </div>
+                </div>
+                <pre></pre>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 selEd">
+                        <div class="selectors">
+                            <img id="selectVersion" src="src/img/EnlistTodayPage/EnlistToday_Button_On_SELECTVERSION.png" style="width: 20%;" />
+                            <span class="enlistSeparator">--</span>
+                            <img id="selectPlatform" src="src/img/EnlistTodayPage/EnlistToday_Button_Off_SELECTPLATFORM.png" style="width: 20%;"/>
+                        </div>
+                    </div>
+                </div>
+                <pre></pre>
+                <div class="row">
+                    <div id="editions" class="container col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 visible">
+                        <div id="staed" class="midAlign col-6" style="float: left; text-align:right; min-height: 30vh;">
+                            <a class="standard"><img id="staEdImg" onclick="selectPlatform('sta')" src="src/img/EnlistTodayPage/EnlistToday_Off_STANDARDEDITION.png"></a>
+                        </div>
+                        <div id="colled" class="midAlign col-6" style="float: right; text-align:left; min-height: 30vh;">
+                            <a class="collector"><img id="collEdImg" onclick="selectPlatform('col')" src="src/img/EnlistTodayPage/EnlistToday_Off_COLLECTORSEDITION.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <pre></pre>
+                <div class="row platformsCont">
+                    <div id="platforms" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 hidden">
+                        <div id="steam" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-4 triAlign enlistSteam">
+                            <a id="platSteam"><img src="src/img/steam.JPG"></a>
+                        </div>
+                        <div id="ps" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-4 triAlign enlistPs">
+                            <a id="platPS"><img src="src/img/ps.JPG"></a>
+                        </div>
+                        <div id="xbox" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-4 triAlign enlistXbox">
+                            <a id="platXbox"><img src="src/img/xbox.JPG"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="enlistTodayFooter">
+                    <div class="platformsCont">
+                        <img src="src/img/EnlistTodayPage/Steam Icon.png" />
+                        <img src="src/img/EnlistTodayPage/Steam Deck Icon.png" />
+                        <img src="src/img/EnlistTodayPage/Playstation Icon.png" />
+                        <img src="src/img/EnlistTodayPage/Xbox Icon.png" />
+                    </div>
+                </div>
+                <pre></pre>
+            </div>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <section class="d-flex justify-content-center align-items-center"> 
+        <div class="w-100 h-100 contentBG con2">
+            <div class="container wide">
+                <br /><br /><br />
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <h1 class="display-1 conTitle">The Holdfast Community</h1>
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                        <p>
+                            Holdfast is more than just a game, the community provides an extra experience through the many role-play features and proximity voice chat. It brings role-players, regiment (clan) members, casual gamers, and those who are here just for the untimely funny moments together.
+                            <br/><br/>
+                            The great Holdfast community welcomes you. ❤️
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br /><br /><br />
+        </div>
+    </section>
+    <div class="divider"></div>
+    <section class="d-flex justify-content-center align-items-center"> 
+        <div class="w-100 h-100 contentBG con3">
+            <div class="container wide">
+                <div class="contentSpacer"></div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <h1 class="display-1 conTitle">Battle Across Eras</h1>
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                        <p>
+                            Engage in large-scale battles across multiple eras! Ram your shot and fire impressive displays of coordinated volleys in the Napoleonic Wars or take to the frontlines of WW1 and charge at the officer's whistle to death or victory.
+                            <br/><br/>
+                            Embark aboard warships from the golden age of sail and take to the seven seas. Bombard the beaches of historic Gallipoli with the mighty dreadnaught.
+                        </p>
+                    </div>
+                </div>
+                <br /><br /><br />
+            </div>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <section class="d-flex justify-content-center align-items-center"> 
+        <div class="w-100 h-100 contentBG con5">
+            <div class="container wide">
+                <br /><br /><br />
+                <div class="row justify-content-end">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <h1 class="display-1 conTitle">Battlefield Roles</h1>
+                        <br />
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                        <p>
+                            Steadfast men in the ranks and take lead as an officer, fire devastating musket volleys while standing shoulder to shoulder, support the fight from the rear with artillery, command naval vessels, ride to glory on horseback or give ‘em steel with bayonet equipped.
+                            <br/><br/>
+                            A grand selection of 27 classes to play with. Every class comes with its own traits and abilities which are crucial for your team's success
+                        </p>
+                    </div>
+                </div>
+                <br /><br /><br />
+            </div>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <section class="d-flex justify-content-center align-items-center"> 
+        <div class="w-100 h-100 contentBG con6">
+            <div class="container wide">
+                <br /><br /><br />
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <h1 class="display-1 conTitle">Customisation & Progression</h1>
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                        <p>
+                            Battle-hardened soldiers can cosmetically display their feats through Holdfast's player progression and customisation mechanics. 
+                            <br/><br/>
+                            Select from 100+ unlockables featuring customisable heads, unique backpacks, specialised muskets and melee weaponry or cheer for your Emperor with various gestures and shouts.
+                        </p>
+                    </div>
+                </div>
+                <br /><br /><br />
+            </div>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <section class="d-flex justify-content-center align-items-center"> 
+        <div class="w-100 h-100 contentBG con7">
+            <div class="container wide">
+                <br /><br /><br />
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <h1 class="display-1 conTitle">Warring Nations</h1>
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                        <p>
+                            Take the King's shilling or fight for the Emperor in smoke-filled Napoleonic field battles! Declare your allegiance to the British Empire, French Empire, Kingdom of Prussia, Russian Empire, Austrian Empire or the Kingdom of Italy.
+                            <br/><br/>
+                            Head over the top with the Central or Allied Powers and strive for dominance on trench-ridden battlefields of the Great War.
+                            <br/><br/>
+                        </p>
+                    </div>
+                </div>
+                <br /><br /><br />
+            </div>
+        </div>
+    </section>    
+    <div class="divider"></div>
+    <div class="socials">
+        <section class="d-flex">
+            <div class="w-100 h-100 bgDark">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
+                    <div class="container footerContainer">
+                        <div class="row fRow">
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-12 footBrand">
+                                <span style="padding-top: 2%;">HOLDFAST</span>
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 col-12">
+                                <div class="footerSocials">
+                                    <a class="" href="https://discord.com/invite/holdfastgame">
+                                        <span class="bi bi-discord"></span>
+                                    </a>
+                                    <a class="" href="https://www.tiktok.com/@anvilgamestudios?lang=en">
+                                        <span class="bi bi-tiktok"></span>
+                                    </a>
+                                    <a class="" href="https://www.reddit.com/r/holdfastgame/">
+                                        <span class="bi bi-reddit"></span>
+                                    </a>
+                                    <a class="" href="https://www.youtube.com/anvilgamestudio">
+                                        <span class="bi bi-youtube"></span>
+                                    </a>
+                                    <a class="" href="https://www.facebook.com/holdfastgame/">
+                                        <span class="bi bi-facebook"></span>
+                                    </a>
+                                    <a class="" href="https://x.com/holdfastgame">
+                                        <span class="bi bi-twitter-x"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="footer">
+        <section class="d-flex">
+            <div class="container">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 alignsm">
+                    <div class="row">
+                        <div class="anvilLogo">
+                            <a href="#home"><img src="src/img/Anvil_Game_Studios_Logo_Large_White.png" alt="Anvil-Game-Studios-Logo" width="250px" height="50px"/></a>
+                        </div>
+                        <div class="footerCopyright">
+                            <span>© 2025 Anvil Game Studios</span>
+                        </div>
+                        <div style="text-align: right; font-size: 12px; width: 30%;">
+                            <span>We are a community driven team. <a href="">Send us feedback</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>     
+
+    <script type="text/javascript">
+        function changeSelectors(selector) {
+            var other = selector.id == 'selectVersion' ? 'selectPlatform' : 'selectVersion';
+            $(selector).off('click');
+        }
+
+        function selectPlatform(edition) {
+            $('#selectPlatform').attr('src', 'src/img/EnlistTodayPage/EnlistToday_Button_On_SELECTPLATFORM.png');
+            $('#selectVersion').attr('src', 'src/img/EnlistTodayPage/EnlistToday_Button_Off_SELECTVERSION.png');
+            $('#platforms').removeClass('hidden');
+            $('#editions').addClass('hidden');
+            $('#editions').removeClass('visible');
+            $('#selectPlatform').attr('onclick', '');
+            $('#selectVersion').attr('onclick', 'selectVersion()');
+            $('#selectPlatform').removeClass('pointer');
+            $('#selectVersion').addClass('pointer');
+
+            if (edition === 'sta') {
+                $('#platSteam').attr('href', 'https://www.google.com');
+                $('#platPS').attr('href', 'https://www.google.com');
+                $('#platXbox').attr('href', 'https://www.google.com');
+            } else {
+                $('#platSteam').attr('href', 'https://www.facebook.com');
+                $('#platPS').attr('href', 'https://www.facebook.com');
+                $('#platXbox').attr('href', 'https://www.facebook.com');
+            }
+        }
+
+        function selectVersion() {
+            $('#selectVersion').attr('src', 'src/img/EnlistTodayPage/EnlistToday_Button_On_SELECTVERSION.png');
+            $('#selectPlatform').attr('src', 'src/img/EnlistTodayPage/EnlistToday_Button_Off_SELECTPLATFORM.png');
+            $('#platforms').addClass('hidden');
+            $('#editions').removeClass('hidden');
+            $('#selectVersion').attr('onclick', '');
+            $('#selectVersion').removeClass('pointer');
+        }
+
+        $(document).ready(function(){
+            $('#aVer').click(function() {
+                $('#editions').removeClass("hidden").addClass("visible");
+                $('#platforms').removeClass("visible").addClass("hidden");
+            });
+
+            $('#aPla').click(function() {
+                $('#editions').removeClass("visible").addClass("hidden");
+                $('#platforms').removeClass("hidden").addClass("visible");
+            });
+
+            $('#trailerOff').hover(function(){
+                $('#trailerOff').removeClass("visible").addClass("hidden");
+                $('#trailerOn').removeClass("hidden").addClass("visible");
+            });
+
+            $('#trailerOn').hover(function (){
+
+            }, function() {
+                $('#trailerOff').removeClass("hidden").addClass("visible");
+                $('#trailerOn').removeClass("visible").addClass("hidden");
+            });
+
+            $('#playOff').hover(function(){
+                $('#playOff').removeClass("visible").addClass("hidden");
+                $('#playOn').removeClass("hidden").addClass("visible");
+            });
+
+            $('#playOn').hover(function (){
+
+            }, function() {
+                $('#playOff').removeClass("hidden").addClass("visible");
+                $('#playOn').removeClass("visible").addClass("hidden");
+            });
+        });
+
+        $('#staEdImg').hover(function (){
+            $(this).attr('src', 'src/img/EnlistTodayPage/EnlistToday_On_STANDARDEDITION.png');
+        }, function () {
+            $(this).attr('src', 'src/img/EnlistTodayPage/EnlistToday_Off_STANDARDEDITION.png')
+        })
+
+        $('#collEdImg').hover(function (){
+            $(this).attr('src', 'src/img/EnlistTodayPage/EnlistToday_On_COLLECTORSEDITION.png');
+        }, function () {
+            $(this).attr('src', 'src/img/EnlistTodayPage/EnlistToday_Off_COLLECTORSEDITION.png')
+        })
+    </script>
+</body>
+</html>

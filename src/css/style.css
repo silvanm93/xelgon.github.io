@@ -1,0 +1,506 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../img/bgblk.JPG);
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    color: #FFFFFFE6;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 20rem;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 1;
+    min-height: 20rem;
+  }
+  
+  /* Media Query for devices withi coarse pointers and no hover functionality */
+  /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+  
+  @media (pointer: coarse) and (hover: none) {
+    header video {
+      display: none;
+    }
+  }
+
+.link-color {
+    color: White!important;
+}
+
+#maincontent {
+    background-size: cover;
+    min-height: 95vh!important;
+}
+
+#editions {
+    margin-top: 10px;
+}
+
+.divider {
+    height: 4px;
+    background-image: url(../img/GoldenTrim.png);
+}
+
+.hfLogo {
+    width: 50%;
+    height: 50%;
+}
+
+.anvilLogo {
+    width: 250px;
+    height: 50px;
+    padding: 0px;
+}
+
+.footer {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.footerCopyright {
+    width: 50%;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #FFFFFF80;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.footerSocials {
+    margin-inline: auto;
+    justify-content: center;
+    display: flex;
+    color: rgba(63, 49, 1, 0.8);
+}
+
+.footerSocials a {
+    color: rgba(63, 49, 1, 0.8);
+    color: rgba(80, 66, 48, 0.8);
+    color: rgba(80, 66, 48, 0.8);
+    color: rgba(78, 77, 76, 0.8);
+}
+
+.footerSocials a:hover {
+    color: rgba(107, 109, 0, 0.8);
+    color: rgba(225, 210, 4, 0.911);
+    color: rgba(201, 166, 120, 0.8);
+    color: rgba(201, 166, 120, 0.8);
+}
+
+.footBrand {
+    padding-right: 0%;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+}
+
+.footerContainer {
+    justify-content: center;
+    display: flex;
+}
+
+.fRow {
+    padding-top: 2%!important; 
+    padding-bottom: 2%!important;
+    justify-content: center;
+}
+
+.bgDark {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    border-radius: 0.3rem;
+}
+
+@media only screen and (max-width: 578px) {
+    .footBrand {
+      width: 50%;
+      justify-content: center;
+      display: flex;
+      padding-left: 0;
+    }
+
+    .footerSocials {
+        margin-inline: auto;
+        width: 50%;
+    }
+}
+
+.bi {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+@media (min-width: 2400px) {
+    .contentBG {
+        background-size: 100%;
+    }
+}
+
+@media (max-width: 1025px) {
+    .mainButtons {
+        margin-left: 0px!important;
+    }
+}
+
+@media (max-width: 991px) {
+    .bg-nav {
+        background-image: url(../img/TopBar/TopBar_TopBanner_Mobile.png)!important;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainButtons {
+        margin-left: 35px!important;
+    }
+
+    .con1, .con2, .con3, .con4, .con5, .con6, .con7 {
+        background-repeat: no-repeat!important;
+        background-position: top!important;
+        text-align: center!important;
+        background-size: 100%!important;
+    }
+}
+
+@media (max-width: 578px) {
+    .alignsm {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hfLogo {
+        width: auto!important;
+    }
+
+    .mainButtons {
+        width: auto!important;
+        height: auto!important;
+    }
+
+    .mainPlayHoldfast {
+        margin-left: auto!important;
+    }
+
+    .footerCopyright {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .anvilLogo {
+        padding-right: 10px;
+        width: 100%;
+    }
+
+    .maincontent {
+        min-height: 30vh!important;
+    }
+
+    .txtblck {
+        width: 50%;
+        min-width: 300px;
+    }
+
+    .conTitle {
+        font-size: 27px!important;
+        margin-top: 40px!important;
+    }
+
+    body {
+        font-size: 16px!important;
+        text-align: center!important;
+    }
+
+    .contentBG {
+        background-size: 100%!important;
+    }
+
+    .triAlign {
+        margin-bottom: 15px;
+    }
+
+    .platformsCont {
+        justify-self: center;
+    }
+
+    .enlist {
+        width: 300px!important;
+        overflow: hidden!important;
+    }
+}
+
+.mainButtonsContainer {
+    margin-inline: auto; 
+    width: 80%;
+    max-width: fit-content;
+}
+
+.mainButtonsContainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.mainWatchTrailer {
+    float: left;
+}
+
+.mainPlayHoldfast {
+    margin-left: 8px;
+    float: left;
+}
+
+.bg-nav {
+    background-image: url(../img/TopBar/TopBar_TopBanner.png);
+    /* background-size: contain; fix for max reso? */
+    border-bottom: 2px solid rgba(173, 146, 107, 0.8);
+}
+
+.navbar {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280255, 255, 255, 1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.enlist {
+    text-align: center;
+}
+
+.enlistSeparator {
+    color: rgb(51, 51, 51);
+}
+
+#editions img {
+    width: 50%;
+    cursor: pointer;
+}
+
+#platforms img {
+    width: 50%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.enlistTodayFooter {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.enlistTodayFooter img {
+    margin-right: 30px;
+}
+
+.txtblck {
+    margin-top: 10%;
+}
+
+.contentSpacer {
+    min-height: 255px;
+}
+
+.bi-twitter-x {
+    margin-right: 0px;
+}
+
+.conTitle {
+    font-family: 'Cinzel';
+    font-weight: 600;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+.con1 {
+    background-image: url(../img/20250102210444_1.png);
+    min-height: 750px;
+    background-size: auto!important;
+}
+
+.con2 {
+    background-image: url(../img/HoldfastCommunity_Banner.png);
+}
+
+.con3 {
+    background-image: url(../img/BattleAcrossEras_Banner.png);
+}
+
+.con4 {
+    background-image: url(../img/ec53f54125a4cbf9c35a1ac55b5d9c6e.png);
+    min-height: 100vh;
+}
+
+.con5 {
+    background-image: url(../img/BattlefieldRoles_Banner.png);
+    text-align: right;
+}
+
+.con6 {
+    background-image: url(../img/Customization&Progression_Banner.png)
+}
+
+.con7 {
+    background-image: url(../img/WarringNations_Banner.png);
+}
+
+.contentBG {
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.wide {
+    min-width: 85%!important;
+}
+
+.wider {
+    min-width: 95%!important;
+}
+
+.min-h {
+    min-height: 80vh!important;
+}
+
+.nav-item {
+    margin: 0px, 0px, 0px, 35px;
+}
+
+.nav-item:hover .nav-link {
+    background-color: rgba(255, 255, 255, 0.05);
+    /*color: rgb(59, 54, 4)!important;*/
+}
+
+.nav-pills {
+    border-radius: 1em;
+}
+
+.navbuy {
+    background-color: rgba(185, 0, 0, 0.7);
+    padding: 8px 10px;
+    margin-left: 2px;
+}
+
+.navbuy:hover {
+    background-color: rgba(185, 0, 0, 0.9)!important;
+}
+
+.navbrand {
+    height: 32px;
+    width: 32px;
+}
+
+.navbar {
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border-radius: 0.4rem;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        margin: 0;
+        border-radius: 0;
+        text-align: center;
+    }
+}
+
+.navbar-brand {
+    color: white!important;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.description {
+    font-weight: 500;
+    margin-inline: auto;
+    width: 85%;
+    text-align: center;
+}
+
+.standard {
+    margin-right: 30px;
+}
+
+.collector {
+    margin-left: 30px;
+}
+
+.midAlign {
+    margin: auto!important;
+    width: 50%;
+    color: white;
+    font-size: xx-large;
+    transition: all 500ms ease;
+}
+
+.triAlign {
+    float: left;
+    text-align: center;
+}
+
+.selEd {
+    width: 50%;
+    margin-inline: auto;
+    color: white;
+    text-align: center;
+}
+
+.enlistSteam {
+    text-align: right;
+}
+
+.enlistXbox {
+    text-align: left;
+}
