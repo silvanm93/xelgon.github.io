@@ -69,7 +69,7 @@ header {
 
 #maincontent {
     background-size: cover;
-    min-height: 95vh!important;
+    min-height: 90vh!important;
 }
 
 #editions {
@@ -81,9 +81,20 @@ header {
     background-image: url(../img/GoldenTrim.png);
 }
 
+.blkDivider {
+    height: 4px;
+    background-image: url(../img/bgblk.JPG);
+}
+
 .hfLogo {
     width: 50%;
     height: 50%;
+}
+
+.hfLogoShadow {
+    width: 55%;
+    height: 55%;
+    margin-bottom: 10%;
 }
 
 .anvilLogo {
@@ -105,7 +116,7 @@ header {
 }
 
 .hidden {
-    display: none;
+    display: none!important;
 }
 
 .visible {
@@ -218,6 +229,10 @@ header {
         width: auto!important;
     }
 
+    .hfLogoShadow {
+        width: auto!important;
+    }
+
     .mainButtons {
         width: auto!important;
         height: auto!important;
@@ -290,9 +305,17 @@ header {
     float: left;
 }
 
+#trailerOff {
+    opacity: 50%;
+}
+
 .mainPlayHoldfast {
     margin-left: 8px;
     float: left;
+}
+
+#playOff {
+    opacity: 50%;
 }
 
 .bg-nav {
@@ -440,10 +463,10 @@ header {
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
-    margin-top: 0.5%;
+    /* margin-top: 0.5%;
     margin-left: 0.5%;
     margin-right: 0.5%;
-    border-radius: 0.4rem;
+    border-radius: 0.4rem; */
 }
 
 @media (max-width: 991px) {

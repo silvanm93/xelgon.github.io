@@ -57,16 +57,13 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                             <pre> </pre><pre> </pre>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                                <img src="src/img/Holdfast_NaW_IP_Logo.webp" alt="holdfast-nations-at-war-logo" class="hfLogo img-fluid rounded mx-auto d-block">
+                                <!-- <img src="src/img/Holdfast_NaW_IP_Logo.webp" alt="holdfast-nations-at-war-logo" class="hfLogo img-fluid rounded mx-auto d-block"> -->
+                                <img src="src/img/website-holdfast-logo-with-shadow.png" alt="holdfast-nations-at-war-logo" class="hfLogoShadow img-fluid rounded mx-auto d-block">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-6 col-md-10 col-sm-10 col-xs-12 col-12">
-                            <!--
-                                copyright footer
-                                -> we are a community driven team etc
-                            -->
                             <h1 class="title"></h1>
                         </div>
                     </div>
@@ -88,12 +85,11 @@
                             </div>
                         </div>
                     </div>
-                    <pre></pre>
-                    <p style="text-align: center;">--platform icons here?--</p>
                 </div>
             </div>
         </div>
     </header>
+    <div id="enlist"></div>
     <div class="divider"></div>
     <section class="d-flex justify-content-center align-items-center"> 
         <div class="w-100 h-100 contentBG con4">
@@ -103,7 +99,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div id="enlist" class="enlist">
+                        <div class="enlist">
                             <img src="src/img/EnlistTodayPage/EnlistToday_Whole.png" style="width: 100%;" />
                         </div>
                     </div>
@@ -112,9 +108,9 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 selEd">
                         <div class="selectors">
-                            <img id="selectVersion" src="src/img/EnlistTodayPage/EnlistToday_Button_On_SELECTVERSION.png" style="width: 20%;" />
+                            <img id="selectVersion" src="src/img/EnlistTodayPage/EnlistToday_Button_On_SELECTVERSION.png" style="width: 30%;" />
                             <span class="enlistSeparator">--</span>
-                            <img id="selectPlatform" src="src/img/EnlistTodayPage/EnlistToday_Button_Off_SELECTPLATFORM.png" style="width: 20%;"/>
+                            <img id="selectPlatform" src="src/img/EnlistTodayPage/EnlistToday_Button_Off_SELECTPLATFORM.png" style="width: 30%;"/>
                         </div>
                     </div>
                 </div>
@@ -143,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="enlistTodayFooter">
+                <div id="enlistTodayFooter" class="enlistTodayFooter">
                     <div class="platformsCont">
                         <img src="src/img/EnlistTodayPage/Steam Icon.png" />
                         <img src="src/img/EnlistTodayPage/Steam Deck Icon.png" />
@@ -179,7 +175,7 @@
             <br /><br /><br />
         </div>
     </section>
-    <div class="divider"></div>
+    <div class="blkDivider"></div>
     <section class="d-flex justify-content-center align-items-center"> 
         <div class="w-100 h-100 contentBG con3">
             <div class="container wide">
@@ -203,7 +199,7 @@
             </div>
         </div>
     </section>
-    <div class="divider"></div>
+    <div class="blkDivider"></div>
     <section class="d-flex justify-content-center align-items-center"> 
         <div class="w-100 h-100 contentBG con5">
             <div class="container wide">
@@ -227,7 +223,7 @@
             </div>
         </div>
     </section>
-    <div class="divider"></div>
+    <div class="blkDivider"></div>
     <section class="d-flex justify-content-center align-items-center"> 
         <div class="w-100 h-100 contentBG con6">
             <div class="container wide">
@@ -251,7 +247,7 @@
             </div>
         </div>
     </section>
-    <div class="divider"></div>
+    <div class="blkDivider"></div>
     <section class="d-flex justify-content-center align-items-center"> 
         <div class="w-100 h-100 contentBG con7">
             <div class="container wide">
@@ -360,6 +356,8 @@
                 $('#platPS').attr('href', 'https://www.facebook.com');
                 $('#platXbox').attr('href', 'https://www.facebook.com');
             }
+
+            $('#enlistTodayFooter').addClass('hidden');
         }
 
         function selectVersion() {
@@ -369,6 +367,7 @@
             $('#editions').removeClass('hidden');
             $('#selectVersion').attr('onclick', '');
             $('#selectVersion').removeClass('pointer');
+            $('#enlistTodayFooter').removeClass('hidden');
         }
 
         $(document).ready(function(){
