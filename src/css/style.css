@@ -423,7 +423,7 @@ header {
 }
 
 .con1 {
-    background-image: url(../img/20250102210444_1.png);
+    background-image: url(../img/test.webp);
     min-height: 750px;
     background-size: auto!important;
 }
@@ -592,4 +592,31 @@ header {
 
 .mobImg {
     display: none;
+}
+
+.modal-dialog {
+    max-width: 1280px;
+    margin: 30px auto;
+}
+
+.modal-content {
+    background-color: transparent;
+}
+
+.modal-body {
+    position:relative;
+    padding:0px;
+}
+
+.close {
+    position:absolute;
+    right:-30px;
+    top:-30px;
+    z-index:999;
+    font-size:2rem;
+    font-weight: bold;
+    opacity:1;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
 }
