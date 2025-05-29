@@ -113,6 +113,23 @@ header {
     margin-left: 5px;
     font-size: 14px;
     color: #FFFFFF80;
+    color: #585858;
+}
+
+.footerFeedback {
+    color: #585858; 
+    text-align: right; 
+    font-size: 12px; 
+    width: 30%;
+}
+
+.footerFeedback a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerFeedback a:hover {
+    color: #d2ad50;
 }
 
 .hidden {
@@ -142,6 +159,7 @@ header {
     color: rgba(225, 210, 4, 0.911);
     color: rgba(201, 166, 120, 0.8);
     color: rgba(201, 166, 120, 0.8);
+    color: #d2ad50;
 }
 
 .footBrand {
@@ -203,6 +221,20 @@ header {
     .bg-nav {
         background-image: url(../img/TopBar/TopBar_TopBanner_Mobile.png)!important;
     }
+
+    .nav-item {
+        list-style: none!important;
+        list-style-type: none!important;
+    }
+
+    #discord {
+        margin-left: 0px!important;
+    }
+
+    #buynow {
+        margin-left: 0px!important;
+    }
+    
 }
 
 @media (max-width: 768px) {
@@ -211,10 +243,22 @@ header {
     }
 
     .con1, .con2, .con3, .con4, .con5, .con6, .con7 {
-        background-repeat: no-repeat!important;
+        /* background-repeat: no-repeat!important; */
         background-position: top!important;
         text-align: center!important;
         background-size: 100%!important;
+    }
+
+    .con2, .con3, .con5, .con6, .con7 {
+        background-image: url(../img/ContentBG_Mobile.PNG)!important;
+    }
+
+    .topgap {
+        display: none;
+    }
+
+    .mobImg {
+        display: flex!important;
     }
 }
 
@@ -306,7 +350,7 @@ header {
 }
 
 #trailerOff {
-    opacity: 50%;
+    opacity: 65%;
 }
 
 .mainPlayHoldfast {
@@ -315,13 +359,13 @@ header {
 }
 
 #playOff {
-    opacity: 50%;
+    opacity: 65%;
 }
 
 .bg-nav {
-    background-image: url(../img/TopBar/TopBar_TopBanner.png);
-    /* background-size: contain; fix for max reso? */
-    border-bottom: 2px solid rgba(173, 146, 107, 0.8);
+    background-image: url(../img/TopBar/web-new-top-bar.png);
+    /* border-bottom: 2px solid rgba(173, 146, 107, 0.8); */
+    border-bottom: 2px solid rgba(102, 102, 102, 0.8);
 }
 
 .navbar {
@@ -412,8 +456,8 @@ header {
 
 .contentBG {
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: darken;
+    /* background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken; */
     background-size: cover;
 }
 
@@ -431,6 +475,12 @@ header {
 
 .nav-item {
     margin: 0px, 0px, 0px, 35px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.nav-item::marker {
+    color: #3D3D3D;
 }
 
 .nav-item:hover .nav-link {
@@ -440,6 +490,14 @@ header {
 
 .nav-pills {
     border-radius: 1em;
+}
+
+#discord {
+    margin-left: -20px;
+}
+
+#buynow {
+    margin-left: -15px;
 }
 
 .navbuy {
@@ -526,4 +584,12 @@ header {
 
 .enlistXbox {
     text-align: left;
+}
+
+.imgFade {
+    mask-image: linear-gradient(to bottom, black, black 25%, black 70%, transparent);
+}
+
+.mobImg {
+    display: none;
 }

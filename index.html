@@ -28,15 +28,24 @@
             </button>
             <a class="navbar-brand" href="#home" ><img height="26px" width="52.78px" src="src/img/TopBar/TopBar_CompanyLogo.png" alt="anvil-menu-logo" /></a>
             <div class="collapse navbar-collapse" id="mainmenu">
-                <ul class="nav nav-pills navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link link-color" href="https://store.steampowered.com/news/app/589290" ><img src="src/img/TopBar/TopBar_Button_Presskit.png" /></a>
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a class="" href="https://store.steampowered.com/news/app/589290">
+                            <img id="presskit" src="src/img/TopBar/web-presskit.png" />
+                            <!-- <img id="presskitHover" src="src/img/TopBar/web-presskit_on-hover.png" class="hidden" /> -->
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-color" href="https://discord.com/invite/holdfastgame" ><img src="src/img/TopBar/TopBar_Button_Discord.png" /></a>
+                        <a class="" href="https://discord.com/invite/holdfastgame">
+                            <img id="discord" src="src/img/TopBar/web-discord.png" />
+                            <!-- <img id="discordOnHover" src="src/img/TopBar/web-discord_on-hover.png" class="hidden" /> -->
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-color" href="#enlist"><img src="src/img/TopBar/TopBar_Button_BuyNow.png" /></a>
+                        <a class="" href="#enlist">
+                            <img id="buynow" src="src/img/TopBar/web-buy-now.png" />
+                            <!-- <img id="buynowOnHover" src="src/img/TopBar/web-buy-now_on-hover.png" class="hidden" /> -->
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -58,7 +67,7 @@
                             <pre> </pre><pre> </pre>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                 <!-- <img src="src/img/Holdfast_NaW_IP_Logo.webp" alt="holdfast-nations-at-war-logo" class="hfLogo img-fluid rounded mx-auto d-block"> -->
-                                <img src="src/img/website-holdfast-logo-with-shadow.png" alt="holdfast-nations-at-war-logo" class="hfLogoShadow img-fluid rounded mx-auto d-block">
+                                <img src="src/img/website-holdfast-logo.png" alt="holdfast-nations-at-war-logo" class="hfLogoShadow img-fluid rounded mx-auto d-block">
                             </div>
                         </div>
                     </div>
@@ -72,14 +81,18 @@
                             <div class="mainButtonsContainer">
                                 <div class="mainWatchTrailer">
                                     <a href="">
-                                        <img id="trailerOff" class="visible" src="src/img/TrailerPage/TrailerPage_Off_Button_WatchTrailer.png" />
-                                        <img id="trailerOn" class="hidden" src="src/img/TrailerPage/TrailerPage_On_Button_WatchTrailer.png" />
+                                        <!-- <img id="trailerOff" class="visible" src="src/img/TrailerPage/TrailerPage_Off_Button_WatchTrailer.png" />
+                                        <img id="trailerOn" class="hidden" src="src/img/TrailerPage/TrailerPage_On_Button_WatchTrailer.png" /> -->
+                                        <img id="trailerOff" class="visible" src="src/img/TrailerPage/web-watch-trailer.png" />
+                                        <img id="trailerOn" class="hidden" src="src/img/TrailerPage/web-watch-trailer_on-hover.png" />
                                     </a>
                                 </div>
                                 <div class="mainPlayHoldfast">
                                     <a href="#enlist">
-                                        <img id="playOff" class="visible" src="src/img/TrailerPage/TrailerPage_Off_Button_PlayHoldfast.png" />
-                                        <img id="playOn" class="hidden" src="src/img/TrailerPage/TrailerPage_On_Button_PlayHoldfast.png" />
+                                        <!-- <img id="playOff" class="visible" src="src/img/TrailerPage/TrailerPage_Off_Button_PlayHoldfast.png" />
+                                        <img id="playOn" class="hidden" src="src/img/TrailerPage/TrailerPage_On_Button_PlayHoldfast.png" /> -->
+                                        <img id="playOff" class="visible" src="src/img/TrailerPage/web-wishlist.png" />
+                                        <img id="playOn" class="hidden" src="src/img/TrailerPage/web-wishlist_on-hover.png" />
                                     </a>
                                 </div>
                             </div>
@@ -151,11 +164,16 @@
             </div>
         </div>
     </section>
-    <div class="divider"></div>
+    <div class="blkDivider"></div>
     <section class="d-flex justify-content-center align-items-center"> 
         <div class="w-100 h-100 contentBG con2">
+            <div class="mobImg">
+                <img src="src/img/HoldfastCommunity_Banner_Mobile.png" class="imgFade" width="100%"/>
+            </div>
             <div class="container wide">
-                <br /><br /><br />
+                <div class="topgap">
+                    <br /><br /><br />
+                </div>
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                         <h1 class="display-1 conTitle">The Holdfast Community</h1>
@@ -178,8 +196,13 @@
     <div class="blkDivider"></div>
     <section class="d-flex justify-content-center align-items-center"> 
         <div class="w-100 h-100 contentBG con3">
+            <div class="mobImg">
+                <img src="src/img/BattleAcrossEras_Banner_Mobile.png" class="imgFade" width="100%"/>
+            </div>
             <div class="container wide">
-                <div class="contentSpacer"></div>
+                <div class="topgap">
+                    <br /><br /><br />
+                </div>
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                         <h1 class="display-1 conTitle">Battle Across Eras</h1>
@@ -202,8 +225,13 @@
     <div class="blkDivider"></div>
     <section class="d-flex justify-content-center align-items-center"> 
         <div class="w-100 h-100 contentBG con5">
+            <div class="mobImg">
+                <img src="src/img/BattlefieldRoles_Banner_Mobile.png" class="imgFade" width="100%"/>
+            </div>
             <div class="container wide">
-                <br /><br /><br />
+                <div class="topgap">
+                    <br /><br /><br />
+                </div>
                 <div class="row justify-content-end">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                         <h1 class="display-1 conTitle">Battlefield Roles</h1>
@@ -226,8 +254,13 @@
     <div class="blkDivider"></div>
     <section class="d-flex justify-content-center align-items-center"> 
         <div class="w-100 h-100 contentBG con6">
+            <div class="mobImg">
+                <img src="src/img/Customization&Progression_Banner_Mobile.png" class="imgFade" width="100%"/>
+            </div>
             <div class="container wide">
-                <br /><br /><br />
+                <div class="topgap">
+                    <br /><br /><br />
+                </div>
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                         <h1 class="display-1 conTitle">Customisation & Progression</h1>
@@ -250,11 +283,16 @@
     <div class="blkDivider"></div>
     <section class="d-flex justify-content-center align-items-center"> 
         <div class="w-100 h-100 contentBG con7">
+            <div class="mobImg">
+                <img src="src/img/WarringNations_Banner_Mobile.png" class="imgFade" width="100%"/>
+            </div>
             <div class="container wide">
-                <br /><br /><br />
+                <div class="topgap">
+                    <br /><br /><br />
+                </div>
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                        <h1 class="display-1 conTitle">Warring Nations</h1>
+                        <h1 class="display-1 conTitle testFade">Warring Nations</h1>
                         <br />
                     </div>
                 </div>
@@ -321,8 +359,30 @@
                         <div class="footerCopyright">
                             <span>© 2025 Anvil Game Studios</span>
                         </div>
-                        <div style="text-align: right; font-size: 12px; width: 30%;">
-                            <span>We are a community driven team. <a href="">Send us feedback</a></span>
+                        <div class="footerFeedback">
+                            <!-- <div class="footerSocials">
+                                <a class="" href="https://discord.com/invite/holdfastgame">
+                                    <span class="bi bi-discord"></span>
+                                </a>
+                                <a class="" href="https://www.tiktok.com/@anvilgamestudios?lang=en">
+                                    <span class="bi bi-tiktok"></span>
+                                </a>
+                                <a class="" href="https://www.reddit.com/r/holdfastgame/">
+                                    <span class="bi bi-reddit"></span>
+                                </a>
+                                <a class="" href="https://www.youtube.com/anvilgamestudio">
+                                    <span class="bi bi-youtube"></span>
+                                </a>
+                                <a class="" href="https://www.facebook.com/holdfastgame/">
+                                    <span class="bi bi-facebook"></span>
+                                </a>
+                                <a class="" href="https://x.com/holdfastgame">
+                                    <span class="bi bi-twitter-x"></span>
+                                </a>
+                            </div> -->
+                            <div style="display: flex; justify-content: end;">
+                                <span>We are a community driven team. </span><a href="https://discord.com/invite/holdfastgame"><span style="font-size: 12px;" class="bi bi-chat-fill"> Send us feedback</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -410,13 +470,31 @@
             $(this).attr('src', 'src/img/EnlistTodayPage/EnlistToday_On_STANDARDEDITION.png');
         }, function () {
             $(this).attr('src', 'src/img/EnlistTodayPage/EnlistToday_Off_STANDARDEDITION.png')
-        })
+        });
 
         $('#collEdImg').hover(function (){
             $(this).attr('src', 'src/img/EnlistTodayPage/EnlistToday_On_COLLECTORSEDITION.png');
         }, function () {
             $(this).attr('src', 'src/img/EnlistTodayPage/EnlistToday_Off_COLLECTORSEDITION.png')
-        })
+        });
+
+        $('#presskit').hover(function (){
+            $(this).attr('src', 'src/img/TopBar/web-presskit_on-hover.png');
+        }, function () {
+            $(this).attr('src', 'src/img/TopBar/web-presskit.png')
+        });
+
+        $('#discord').hover(function (){
+            $(this).attr('src', 'src/img/TopBar/web-discord_on-hover.png');
+        }, function () {
+            $(this).attr('src', 'src/img/TopBar/web-discord.png')
+        });
+
+        $('#buynow').hover(function (){
+            $(this).attr('src', 'src/img/TopBar/web-buy-now_on-hover.png');
+        }, function () {
+            $(this).attr('src', 'src/img/TopBar/web-buy-now.png')
+        });
     </script>
 </body>
 </html>
