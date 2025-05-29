@@ -56,7 +56,7 @@
     <header>
         <div class="overlay"></div>
 
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <video id="bgVideo" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="src/vids/background.mp4" type="video/mp4">
         </video>
 
@@ -97,16 +97,12 @@
                             <div class="mainButtonsContainer">
                                 <div class="mainWatchTrailer">
                                     <a class="pointer">
-                                        <!-- <img id="trailerOff" class="visible" src="src/img/TrailerPage/TrailerPage_Off_Button_WatchTrailer.png" />
-                                        <img id="trailerOn" class="hidden" src="src/img/TrailerPage/TrailerPage_On_Button_WatchTrailer.png" /> -->
                                         <img id="trailerOff" class="visible" src="src/img/TrailerPage/web-watch-trailer.png" />
                                         <img id="trailerOn" data-bs-toggle="modal" data-bs-target="#videoModal" class="hidden" src="src/img/TrailerPage/web-watch-trailer_on-hover.png" />
                                     </a>
                                 </div>
                                 <div class="mainPlayHoldfast">
                                     <a href="#enlist">
-                                        <!-- <img id="playOff" class="visible" src="src/img/TrailerPage/TrailerPage_Off_Button_PlayHoldfast.png" />
-                                        <img id="playOn" class="hidden" src="src/img/TrailerPage/TrailerPage_On_Button_PlayHoldfast.png" /> -->
                                         <img id="playOff" class="visible" src="src/img/TrailerPage/web-wishlist.png" />
                                         <img id="playOn" class="hidden" src="src/img/TrailerPage/web-wishlist_on-hover.png" />
                                     </a>
@@ -412,6 +408,12 @@
             $(selector).off('click');
         }
 
+        var player;
+        
+        function onYouTubePlayerAPIReady() {
+            player = new YT.Player('video');
+        }
+
         function selectPlatform(edition) {
             $('#selectPlatform').attr('src', 'src/img/EnlistTodayPage/EnlistToday_Button_On_SELECTPLATFORM.png');
             $('#selectVersion').attr('src', 'src/img/EnlistTodayPage/EnlistToday_Button_Off_SELECTVERSION.png');
@@ -481,20 +483,16 @@
                 $('#playOn').removeClass("visible").addClass("hidden");
             });
         });
-
-        var player;
-        
-        function onYouTubePlayerAPIReady() {
-            player = new YT.Player('video');
-        }
         
         $('#videoModal').on('hide.bs.modal', function (e) {
             player.pauseVideo();
+            $('#bgVideo')[0].play();
         });
 
-        // $('#videoModal').on('show.bs.modal', function (e) {
-        //     player.playVideo();
-        // });
+        $('#videoModal').on('show.bs.modal', function (e) {
+             player.playVideo();
+             $('#bgVideo')[0].pause();
+        });
 
         $('#staEdImg').hover(function (){
             $(this).attr('src', 'src/img/EnlistTodayPage/EnlistToday_On_STANDARDEDITION.png');
