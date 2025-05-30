@@ -250,7 +250,7 @@ header {
     }
 
     .con2, .con3, .con5, .con6, .con7 {
-        background-image: url(../img/ContentBG_Mobile.PNG)!important;
+        background-image: url(../../assets/content/ContentBG_Mobile.png)!important;
     }
 
     .topgap {
