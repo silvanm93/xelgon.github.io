@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-    background-image: url(../img/bgblk.JPG);
+    background-image: url(../../assets/bgblk.JPG);
     background-attachment: fixed;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
@@ -78,12 +78,12 @@ header {
 
 .divider {
     height: 4px;
-    background-image: url(../img/GoldenTrim.png);
+    background-image: url(../../assets/GoldenTrim.png);
 }
 
 .blkDivider {
     height: 4px;
-    background-image: url(../img/bgblk.JPG);
+    background-image: url(../../assets/bgblk.JPG);
 }
 
 .hfLogo {
@@ -219,7 +219,7 @@ header {
 
 @media (max-width: 991px) {
     .bg-nav {
-        background-image: url(../img/TopBar/TopBar_TopBanner_Mobile.png)!important;
+        background-image: url(../../assets/nav/navbar_bg_mob.png)!important;
     }
 
     .nav-item {
@@ -259,6 +259,27 @@ header {
 
     .mobImg {
         display: flex!important;
+    }
+
+    #editions img {
+        width: 85%!important;
+        margin-bottom: 10px;
+    }
+
+    .selEd {
+        width: 100%!important;
+    }
+
+    .enlistSteam {
+        text-align: center!important;
+    }
+
+    .enlistXbox {
+        text-align: center!important;
+    }
+
+    .enlistTodayFooter {
+        margin-top: 5px!important;
     }
 }
 
@@ -332,11 +353,17 @@ header {
         width: 300px!important;
         overflow: hidden!important;
     }
+
+    .enlistTodayFooter img{
+        width: 40%!important;
+        margin-right: 0px!important;
+        margin-top: 5px!important;
+    }
 }
 
 .mainButtonsContainer {
     margin-inline: auto; 
-    width: 80%;
+    /* width: 80%; */
     max-width: fit-content;
 }
 
@@ -363,7 +390,7 @@ header {
 }
 
 .bg-nav {
-    background-image: url(../img/TopBar/web-new-top-bar.png);
+    background-image: url(../../assets/nav/navbar_bg.png);
     /* border-bottom: 2px solid rgba(173, 146, 107, 0.8); */
     border-bottom: 2px solid rgba(102, 102, 102, 0.8);
 }
@@ -381,7 +408,7 @@ header {
 }
 
 #editions img {
-    width: 50%;
+    width: 95%;
     cursor: pointer;
 }
 
@@ -423,35 +450,35 @@ header {
 }
 
 .con1 {
-    background-image: url(../img/test.webp);
+    background-image: url(../../assets/content/Main_Banner_Mobile.png);
     min-height: 750px;
     background-size: auto!important;
 }
 
 .con2 {
-    background-image: url(../img/HoldfastCommunity_Banner.png);
+    background-image: url(../../assets/content/HoldfastCommunity_Banner.png);
 }
 
 .con3 {
-    background-image: url(../img/BattleAcrossEras_Banner.png);
+    background-image: url(../../assets/content/BattleAcrossEras_Banner.png);
 }
 
 .con4 {
-    background-image: url(../img/ec53f54125a4cbf9c35a1ac55b5d9c6e.png);
+    background-image: url(../../assets/content/ec53f54125a4cbf9c35a1ac55b5d9c6e.png);
     min-height: 100vh;
 }
 
 .con5 {
-    background-image: url(../img/BattlefieldRoles_Banner.png);
+    background-image: url(../../assets/content/BattlefieldRoles_Banner.png);
     text-align: right;
 }
 
 .con6 {
-    background-image: url(../img/Customization&Progression_Banner.png)
+    background-image: url(../../assets/content/Customization&Progression_Banner.png)
 }
 
 .con7 {
-    background-image: url(../img/WarringNations_Banner.png);
+    background-image: url(../../assets/content/WarringNations_Banner.png);
 }
 
 .contentBG {
@@ -548,14 +575,6 @@ header {
     margin-inline: auto;
     width: 85%;
     text-align: center;
-}
-
-.standard {
-    margin-right: 30px;
-}
-
-.collector {
-    margin-left: 30px;
 }
 
 .midAlign {
