@@ -243,10 +243,31 @@ header {
     }
 
     .con1, .con2, .con3, .con4, .con5, .con6, .con7 {
-        /* background-repeat: no-repeat!important; */
-        background-position: top!important;
+        background-repeat: no-repeat!important;
         text-align: center!important;
-        background-size: 100%!important;
+        background-size: cover!important;
+    }
+
+    .con2 {
+        background-position-x: -91px!important;
+        background-position-y: 200px!important;
+    }
+
+    .con3 {
+        background-position-x: -375px!important;
+    }
+
+    .con5 {
+        background-position-x: -243px!important;
+    }
+
+    .con6 {
+        background-position: bottom!important;;
+    }
+
+    .con7 {
+        background-position-x: 5px!important;
+        background-position-y: 21px!important;
     }
 
     .con2, .con3, .con5, .con6, .con7 {
@@ -337,9 +358,9 @@ header {
         text-align: center!important;
     }
 
-    .contentBG {
+    /* .contentBG {
         background-size: 100%!important;
-    }
+    } */
 
     .triAlign {
         margin-bottom: 15px;
