@@ -248,7 +248,7 @@ header {
         background-size: cover!important;
     }
 
-    .con2 {
+    /* .con2 {
         background-position-x: -91px!important;
         background-position-y: 200px!important;
     }
@@ -268,7 +268,7 @@ header {
     .con7 {
         background-position-x: 5px!important;
         background-position-y: 21px!important;
-    }
+    } */
 
     .con2, .con3, .con5, .con6, .con7 {
         background-image: url(../../assets/content/ContentBG_Mobile.png)!important;
