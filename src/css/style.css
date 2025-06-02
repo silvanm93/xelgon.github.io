@@ -10,10 +10,13 @@ body {
     background-image: url(../../assets/bgblk.JPG);
     background-attachment: fixed;
     background-color: rgba(0, 0, 0, 0.5);
+    background:rgb(51, 51, 51);
     background-blend-mode: darken;
     color: #FFFFFFE6;
     font-family: 'Montserrat';
     font-size: 20px;
+    max-width: 2560px;
+    margin:auto;
 }
 
 header {
@@ -69,7 +72,7 @@ header {
 
 #maincontent {
     background-size: cover;
-    min-height: 90vh!important;
+    min-height: 820px!important;
 }
 
 #editions {
@@ -94,7 +97,7 @@ header {
 .hfLogoShadow {
     width: 55%;
     height: 55%;
-    /* margin-top: 10%; */
+    margin-top: 15%;
 }
 
 .anvilLogo {
@@ -398,21 +401,47 @@ header {
     height: 100%;
 }
 
-.mainWatchTrailer {
-    float: left;
-}
-
 #trailerOff {
     opacity: 65%;
 }
 
-.mainPlayHoldfast {
-    margin-left: 8px;
+.mainWatchTrailer {
+    position: relative;
     float: left;
+}
+
+.mainWatchTrailer .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.mainWatchTrailer .before:hover + .after,
+.mainWatchTrailer .after:hover {
+    display: block;
 }
 
 #playOff {
     opacity: 65%;
+}
+
+.mainPlayHoldfast {
+    position: relative;
+    margin-left: 8px;
+    float: left;
+}
+
+.mainPlayHoldfast .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.mainPlayHoldfast .before:hover + .after,
+.mainPlayHoldfast .after:hover {
+    display: block;
 }
 
 .bg-nav {
@@ -422,7 +451,9 @@ header {
 }
 
 .navbar {
-    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280255, 255, 255, 1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280255, 255, 255, 1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    max-width: 2560px;
+    margin: auto;
 }
 
 .enlist {
@@ -455,9 +486,9 @@ header {
     margin-right: 30px;
 }
 
-.txtblck {
+/* .txtblck {
     margin-top: 10%;
-}
+} */
 
 .contentSpacer {
     min-height: 255px;
