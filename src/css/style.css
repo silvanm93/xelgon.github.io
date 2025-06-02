@@ -363,6 +363,7 @@ header {
     body {
         font-size: 16px!important;
         text-align: center!important;
+        background:rgba(0, 0, 0, 0.5)!important;
         background-image: url(../../assets/bgblk_mob.JPG)!important;
     }
 
