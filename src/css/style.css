@@ -8,7 +8,7 @@ html, body {
 
 body {
     background-attachment: fixed;
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.5);
     background-image: url(../../assets/bgblk.JPG);
     background-blend-mode: darken;
     color: #FFFFFFE6;
@@ -108,7 +108,6 @@ header {
 .footer {
     padding-bottom: 10px;
     padding-top: 10px;
-    background-image: url(../../assets/bgblk.JPG);
 }
 
 .footerCopyright {
@@ -364,7 +363,6 @@ header {
     body {
         font-size: 16px!important;
         text-align: center!important;
-        background:rgba(0, 0, 0, 1)!important;
         background-image: url(../../assets/bgblk_mob.JPG)!important;
     }
 
