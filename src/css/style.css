@@ -7,10 +7,9 @@ html, body {
 }
 
 body {
-    background-image: url(../../assets/bgblk.JPG);
     background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
-    background:rgb(51, 51, 51);
+    background: rgba(0, 0, 0, 0.5);
+    background-image: url(../../assets/bgblk.JPG);
     background-blend-mode: darken;
     color: #FFFFFFE6;
     font-family: 'Montserrat';
