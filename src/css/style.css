@@ -111,19 +111,35 @@ header {
     padding-top: 10px;
 }
 
+.footerRow {
+    margin-inline: 0px;
+}
+
 .footerCopyright {
-    width: 50%;
+    width: 30%;
     margin-left: 5px;
     font-size: 14px;
     color: #FFFFFF80;
     color: #585858;
 }
 
+.footerMenu a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footerMenu a:hover {
+    color: #d2ad50;
+}
+
 .footerFeedback {
     color: #585858; 
     text-align: right; 
     font-size: 12px; 
-    width: 30%;
+    width: 50%;
+    display: flex; 
+    justify-content: end;
 }
 
 .footerFeedback a {
@@ -173,8 +189,9 @@ header {
 }
 
 .footerContainer {
-    justify-content: center;
+    justify-content: end;
     display: flex;
+    padding-right: 30px;
 }
 
 .fRow {
@@ -214,6 +231,18 @@ header {
     }
 }
 
+@media (max-width: 1399px) {
+    .footerFeedback {
+        width: 48%!important;
+    }
+}
+
+@media (max-width: 1199px) {
+    .footerFeedback {
+        width: 43%!important;
+    }
+}
+
 @media (max-width: 1025px) {
     .mainButtons {
         margin-left: 0px!important;
@@ -243,6 +272,9 @@ header {
         margin-left: 0px!important;
     }
     
+    .footerFeedback {
+        width: 33%!important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -328,6 +360,21 @@ header {
 
     .selectors img {
         width: 20%!important;
+    }
+
+    .footerContainer {
+        justify-content: center!important;
+        padding-right: 0px!important;
+    }
+
+    .footerCopyright {
+        width: 35%;
+    }
+
+    .footerFeedback {
+        width: 100%!important;
+        justify-content: center!important;
+        margin-top: 5px!important;
     }
 }
 
@@ -454,6 +501,10 @@ header {
     .trailer {
         width: 300px!important;
         height: 169px!important;
+    }
+
+    .footerFeedback {
+        text-align: center!important;
     }
 }
 
