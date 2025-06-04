@@ -72,7 +72,7 @@ header {
 
 #maincontent {
     background-size: cover;
-    min-height: 820px!important;
+    min-height: 820px;
 }
 
 #editions {
@@ -106,9 +106,13 @@ header {
     padding: 0px;
 }
 
-.footer {
-    padding-bottom: 10px;
+.socials {
     padding-top: 10px;
+}
+
+.footer {
+    padding-bottom: 78px;
+    padding-top: 5px;
 }
 
 .footerRow {
@@ -167,17 +171,10 @@ header {
 }
 
 .footerSocials a {
-    color: rgba(63, 49, 1, 0.8);
-    color: rgba(80, 66, 48, 0.8);
-    color: rgba(80, 66, 48, 0.8);
     color: rgba(78, 77, 76, 0.8);
 }
 
 .footerSocials a:hover {
-    color: rgba(107, 109, 0, 0.8);
-    color: rgba(225, 210, 4, 0.911);
-    color: rgba(201, 166, 120, 0.8);
-    color: rgba(201, 166, 120, 0.8);
     color: #d2ad50;
 }
 
@@ -235,11 +232,45 @@ header {
     .footerFeedback {
         width: 48%!important;
     }
+
+    #ediContainer::before {
+        inset: 0.7rem!important;
+    }
+
+    #platformContainerSteam::before,
+    #platformContainerSteam::after {
+        margin-left: 188px!important;
+    }
+
+    #platformContainerPS::before,
+    #platformContainerPS::after {
+        margin-inline: 100px!important;
+    }
+
+    #platformContainerX::before,
+    #platformContainerX::after {
+        margin-right: 188px!important;
+    }
 }
 
 @media (max-width: 1199px) {
     .footerFeedback {
         width: 43%!important;
+    }
+
+    #platformContainerSteam::before,
+    #platformContainerSteam::after {
+        margin-left: 158px!important;
+    }
+
+    #platformContainerPS::before,
+    #platformContainerPS::after {
+        margin-inline: 80px!important;
+    }
+
+    #platformContainerX::before,
+    #platformContainerX::after {
+        margin-right: 158px!important;
     }
 }
 
@@ -275,9 +306,32 @@ header {
     .footerFeedback {
         width: 33%!important;
     }
+
+    #ediContainer::before {
+        inset: 0.4rem!important;
+    }
+
+    #platformContainerSteam::before,
+    #platformContainerSteam::after {
+        margin-left: 118px!important;
+    }
+
+    #platformContainerPS::before,
+    #platformContainerPS::after {
+        margin-inline: 60px!important;
+    }
+
+    #platformContainerX::before,
+    #platformContainerX::after {
+        margin-right: 118px!important;
+    }
 }
 
 @media (max-width: 768px) {
+    .maincontent {
+        min-height: 470px!important;
+    }
+
     .mainButtons {
         margin-left: 35px!important;
     }
@@ -332,21 +386,13 @@ header {
         display: flex!important;
     }
 
-    #editions img {
+    /* #editions img {
         width: 85%!important;
         margin-bottom: 20px;
-    }
+    } */
 
     .selEd {
         width: 100%!important;
-    }
-
-    .enlistSteam {
-        text-align: center!important;
-    }
-
-    .enlistXbox {
-        text-align: center!important;
     }
 
     .enlistTodayFooter {
@@ -376,11 +422,35 @@ header {
         justify-content: center!important;
         margin-top: 5px!important;
     }
+
+    #platformContainerSteam::before,
+    #platformContainerSteam::after {
+        margin-left: 117px!important;
+    }
+
+    #platformContainerPS::before,
+    #platformContainerPS::after {
+        margin-inline: 60px!important;
+    }
+
+    #platformContainerX::before,
+    #platformContainerX::after {
+        margin-right: 117px!important;
+    }
 }
 
 @media (max-width: 767px) {
     .mainButtonsContainer {
-        width: 80%!important;
+        width: 50%!important;
+        margin-bottom: 5px!important;
+    }
+
+    .enlistSteam {
+        text-align: center!important;
+    }
+
+    .enlistXbox {
+        text-align: center!important;
     }
 
     #trailerOff {
@@ -389,6 +459,43 @@ header {
 
     #playOff {
         opacity: 1!important;
+    }
+
+    #editions img {
+        margin-bottom: 10px;
+    }
+
+    #ediContainer::before {
+        margin-bottom: 10px;
+        inset: 0.7rem!important;
+    }
+
+    #platformContainerSteam::before,
+    #platformContainerSteam::after {
+        margin-left: 129px!important;
+        margin-right: 129px!important;
+        margin-bottom: 33px!important;
+    }
+
+    #platformContainerPS::before,
+    #platformContainerPS::after {
+        margin-left: 129px!important;
+        margin-right: 129px!important;
+        margin-bottom: 33px!important;
+    }
+
+    #platformContainerX::before,
+    #platformContainerX::after {
+        margin-left: 129px!important;
+        margin-right: 129px!important;
+        margin-bottom: 33px!important;
+    }
+}
+
+@media (max-width: 585px) {
+    .mainPlayHoldfast {
+        margin-left: 0px!important;
+        margin-top: 10px!important;
     }
 }
 
@@ -424,10 +531,6 @@ header {
         width: 100%;
     }
 
-    .maincontent {
-        min-height: 30vh!important;
-    }
-
     .txtblck {
         width: 50%;
         min-width: 300px;
@@ -444,10 +547,6 @@ header {
         background-image: url(../../assets/bgblk_mob.JPG)!important;
     }
 
-    /* .contentBG {
-        background-size: 100%!important;
-    } */
-
     .triAlign {
         margin-bottom: 15px;
     }
@@ -463,8 +562,7 @@ header {
     }
 
     .enlistTodayFooter img{
-        width: 40%!important;
-        margin-right: 0px!important;
+        margin-right: 5px!important;
         margin-top: 5px!important;
     }
 
@@ -478,15 +576,81 @@ header {
     }
 }
 
+@media (max-width: 575px) {
+    #ediContainer::before,
+    #ediContainer::after {
+        margin-bottom: 10px;
+        inset: 0.7rem!important;
+    }
+}
+
+@media (max-width: 525px) {
+    #platformContainerSteam::before,
+    #platformContainerSteam::after,
+    #platformContainerPS::before,
+    #platformContainerPS::after,
+    #platformContainerX::before,
+    #platformContainerX::after {
+        margin-left: 125px!important;
+        margin-right: 125px!important;
+        margin-bottom: 30px!important;
+    }
+}
+
+@media (max-width: 500px) {
+    #ediContainer::before,
+    #ediContainer::after {
+        margin-bottom: 10px;
+        inset: 1.2rem!important;
+    }
+
+    #platformContainerSteam::before,
+    #platformContainerSteam::after,
+    #platformContainerPS::before,
+    #platformContainerPS::after,
+    #platformContainerX::before,
+    #platformContainerX::after {
+        margin-left: 119px!important;
+        margin-right: 119px!important;
+        margin-bottom: 29px!important;
+    }
+}
+
+@media (max-width: 475px) {
+    #platformContainerSteam::before,
+    #platformContainerSteam::after,
+    #platformContainerPS::before,
+    #platformContainerPS::after,
+    #platformContainerX::before,
+    #platformContainerX::after {
+        margin-left: 112px!important;
+        margin-right: 112px!important;
+        margin-bottom: 27px!important;
+    }
+}
+
+@media (max-width: 450px) {
+    #platformContainerSteam::before,
+    #platformContainerSteam::after,
+    #platformContainerPS::before,
+    #platformContainerPS::after,
+    #platformContainerX::before,
+    #platformContainerX::after {
+        margin-left: 107px!important;
+        margin-right: 107px!important;
+        margin-bottom: 26px!important;
+    }
+}
+
 @media (max-width: 425px) {
     .trailer {
         width: 335px!important;
         height: 188px!important;
     }
 
-    .mainWatchTrailer {
+    /* .mainWatchTrailer {
         margin-bottom: 10px!important;
-    }
+    } */
 
     .mainButtonsContainer {
         width: 70%!important;
@@ -495,6 +659,91 @@ header {
     .selectors img {
         width: 40%!important;
     }
+
+    .footerFeedback {
+        text-align: center!important;
+    }
+
+    #ediContainer::before,
+    #ediContainer::after {
+        margin-bottom: 10px;
+        inset: 1rem!important;
+    }
+
+    #platformContainerSteam::before,
+    #platformContainerSteam::after,
+    #platformContainerPS::before,
+    #platformContainerPS::after,
+    #platformContainerX::before,
+    #platformContainerX::after {
+        margin-left: 100px!important;
+        margin-right: 100px!important;
+        margin-bottom: 25px!important;
+    }
+}
+
+@media (max-width: 400px) {
+    #platformContainerSteam::before,
+    #platformContainerSteam::after,
+    #platformContainerPS::before,
+    #platformContainerPS::after,
+    #platformContainerX::before,
+    #platformContainerX::after {
+        margin-left: 95px!important;
+        margin-right: 95px!important;
+        margin-bottom: 23px!important;
+    }
+}
+
+@media (max-width: 375px) {
+    #platformContainerSteam::before,
+    #platformContainerSteam::after,
+    #platformContainerPS::before,
+    #platformContainerPS::after,
+    #platformContainerX::before,
+    #platformContainerX::after {
+        margin-left: 88px!important;
+        margin-right: 88px!important;
+        margin-bottom: 21px!important;
+    }
+}
+
+@media (max-width: 360px) {
+    .enlistTodayFooter img {
+        width: 35%!important;
+    }
+
+    #ediContainer::before,
+    #ediContainer::after {
+        margin-bottom: 10px;
+        inset: 0.9rem!important;
+    }
+}
+
+@media (max-width: 350px) {
+    #platformContainerSteam::before,
+    #platformContainerSteam::after,
+    #platformContainerPS::before,
+    #platformContainerPS::after,
+    #platformContainerX::before,
+    #platformContainerX::after {
+        margin-left: 82px!important;
+        margin-right: 82px!important;
+        margin-bottom: 19px!important;
+    }
+}
+
+@media (max-width: 330px) {
+    #platformContainerSteam::before,
+    #platformContainerSteam::after,
+    #platformContainerPS::before,
+    #platformContainerPS::after,
+    #platformContainerX::before,
+    #platformContainerX::after {
+        margin-left: 77px!important;
+        margin-right: 77px!important;
+        margin-bottom: 19px!important;
+    }
 }
 
 @media (max-width: 320px) {
@@ -502,15 +751,10 @@ header {
         width: 300px!important;
         height: 169px!important;
     }
-
-    .footerFeedback {
-        text-align: center!important;
-    }
 }
 
 .mainButtonsContainer {
     margin-inline: auto; 
-    /* width: 80%; */
     max-width: fit-content;
 }
 
@@ -520,7 +764,7 @@ header {
 }
 
 #trailerOff {
-    opacity: 65%;
+    opacity: 85%;
 }
 
 .mainWatchTrailer {
@@ -541,7 +785,7 @@ header {
 }
 
 #playOff {
-    opacity: 65%;
+    opacity: 100%;
 }
 
 .mainPlayHoldfast {
@@ -564,7 +808,6 @@ header {
 
 .bg-nav {
     background-image: url(../../assets/nav/navbar_bg.png);
-    /* border-bottom: 2px solid rgba(173, 146, 107, 0.8); */
     border-bottom: 2px solid rgba(102, 102, 102, 0.8);
 }
 
@@ -604,10 +847,6 @@ header {
     margin-right: 30px;
 }
 
-/* .txtblck {
-    margin-top: 10%;
-} */
-
 .contentSpacer {
     min-height: 255px;
 }
@@ -639,7 +878,7 @@ header {
 
 .con4 {
     background-image: url(../../assets/content/holdfast_map_bg.png);
-    min-height: 833.63px;
+    /* min-height: 833.63px; */
 }
 
 .con5 {
@@ -657,8 +896,6 @@ header {
 
 .contentBG {
     background-position: center;
-    /* background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: darken; */
     background-size: cover;
 }
 
@@ -686,7 +923,6 @@ header {
 
 .nav-item:hover .nav-link {
     background-color: rgba(255, 255, 255, 0.05);
-    /*color: rgb(59, 54, 4)!important;*/
 }
 
 .nav-pills {
@@ -722,10 +958,6 @@ header {
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
-    /* margin-top: 0.5%;
-    margin-left: 0.5%;
-    margin-right: 0.5%;
-    border-radius: 0.4rem; */
 }
 
 @media (max-width: 991px) {
@@ -733,6 +965,10 @@ header {
         margin: 0;
         border-radius: 0;
         text-align: center;
+    }
+
+    .enlistTodayFooter img {
+        margin-right: 0px!important;
     }
 }
 
@@ -870,20 +1106,19 @@ header {
     top: -54px;
 }
 
-#platSteam, 
-#platPS,
-#platXbox {
+#platformContainerSteam, 
+#platformContainerPS,
+#platformContainerX {
     position: relative;
     z-index: 1;
 }
 
-#platSteam::before,
-#platPS::before,
-#platXbox::before,
-#platSteam::after,
-#platPS::after,
-#platXbox::after { 
-    height: 100%;
+#platformContainerSteam::before,
+#platformContainerPS::before,
+#platformContainerX::before,
+#platformContainerSteam::after,
+#platformContainerPS::after,
+#platformContainerX::after { 
     display: none;
     content: "";
     position: absolute;
@@ -899,23 +1134,21 @@ header {
     );
     border-radius: inherit;
     animation: rotation 2s linear infinite;
-    margin-top: 105px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-bottom: 27px;
 }
 
-#platSteam::after,
-#platPS::after,
-#platXbox::after {
+#platformContainerSteam::after,
+#platformContainerPS::after,
+#platformContainerX::after {
     filter: blur(0.5em);
 }
 
-#platSteam:hover::after,
-#platPS:hover::after,
-#platXbox:hover::after,
-#platSteam:hover::before,
-#platPS:hover::before,
-#platXbox:hover::before {
+#platformContainerSteam:hover::after,
+#platformContainerPS:hover::after,
+#platformContainerX:hover::after,
+#platformContainerSteam:hover::before,
+#platformContainerPS:hover::before,
+#platformContainerX:hover::before {
     display: flex;
 }
 

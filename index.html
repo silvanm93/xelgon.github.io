@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse" id="mainmenu">
                 <ul class="nav navbar-nav">
                     <li class="">
-                        <a class="" href="https://store.steampowered.com/news/app/589290">
+                        <a class="" href="https://presskit.anvilgamestudios.com/">
                             <img id="presskit" src="assets/nav/web-presskit.png" />
                         </a>
                     </li>
@@ -54,7 +54,7 @@
         <div class="overlay"></div>
 
         <video id="bgVideo" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="src/vids/background.mp4" type="video/mp4">
+            <source src="src/vids/background.webm" type="video/mp4">
         </video>
 
         <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
@@ -78,7 +78,6 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                             <pre> </pre>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                                <!-- <img src="src/img/Holdfast_NaW_IP_Logo.webp" alt="holdfast-nations-at-war-logo" class="hfLogo img-fluid rounded mx-auto d-block"> -->
                                 <img src="assets/website-holdfast-logo.png" alt="holdfast-nations-at-war-logo" class="hfLogoShadow img-fluid rounded mx-auto d-block">
                             </div>
                         </div>
@@ -340,18 +339,18 @@
         </div>
     </section>    
     <div class="divider"></div>
-    <div class="socials">
+    <div class="socials bgDark">
         <section class="d-flex">
-            <div class="w-100 h-100 bgDark">
+            <div class="w-100 h-100">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
                     <div class="container footerContainer">
                         <div class="row fRow">
-                            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 col-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
                                 <div class="footerSocials">
                                     <a class="" href="https://discord.com/invite/holdfastgame">
                                         <span class="bi bi-discord"></span>
                                     </a>
-                                    <a class="" href="https://www.tiktok.com/@anvilgamestudios?lang=en">
+                                    <a class="" href="https://www.tiktok.com/@anvilgamestudios">
                                         <span class="bi bi-tiktok"></span>
                                     </a>
                                     <a class="" href="https://www.reddit.com/r/holdfastgame/">
@@ -380,19 +379,18 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 alignsm">
                     <div class="row">
                         <div class="anvilLogo">
-                            <a href="#home"><img src="assets/Anvil_Game_Studios_Logo_Large_White.png" alt="Anvil-Game-Studios-Logo" width="250px" height="50px"/></a>
+                            <img src="assets/Anvil_Game_Studios_Logo_Large_White.png" alt="Anvil-Game-Studios-Logo" width="250px" height="50px"/>
                         </div>
                         <div class="footerCopyright">
                             <div class="footerMenu">
-                            <a href="">PRESSKIT</a>
-                            <a href="">DISCORD</a>
-                            <a href="">BUY NOW</a>
+                            <a href="https://presskit.anvilgamestudios.com/">PRESSKIT</a>
+                            <a href="https://discord.com/invite/holdfastgame">DISCORD</a>
+                            <a href="#enlist">BUY NOW</a>
                             </div>
                             <div>© 2025 Anvil Game Studios</div>
                         </div>
                         <div class="footerFeedback">
                             <div>We are a community driven team. <a href="https://discord.com/invite/holdfastgame"><span style="font-size: 12px;" class="bi bi-chat-fill"> Send us feedback</span></a></div>
-                            <!-- <span>We are a community driven team. </span><a href="https://discord.com/invite/holdfastgame"><span style="font-size: 12px;" class="bi bi-chat-fill"> Send us feedback</span></a> -->
                         </div>
                     </div>
                 </div>
@@ -401,11 +399,6 @@
     </div>     
 
     <script type="text/javascript">
-        function changeSelectors(selector) {
-            var other = selector.id == 'selectVersion' ? 'selectPlatform' : 'selectVersion';
-            $(selector).off('click');
-        }
-
         var player;
         
         function onYouTubePlayerAPIReady() {
@@ -458,18 +451,6 @@
             $('#backArrow').addClass('hidden');
         }
 
-        $(document).ready(function(){
-            $('#aVer').click(function() {
-                $('#editions').removeClass("hidden").addClass("visible");
-                $('#platforms').removeClass("visible").addClass("hidden");
-            });
-
-            $('#aPla').click(function() {
-                $('#editions').removeClass("visible").addClass("hidden");
-                $('#platforms').removeClass("hidden").addClass("visible");
-            });
-        });
-        
         $('#videoModal').on('hide.bs.modal', function (e) {
             player.pauseVideo();
             $('#bgVideo')[0].play();
