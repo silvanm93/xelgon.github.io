@@ -236,41 +236,11 @@ header {
     #ediContainer::before {
         inset: 0.7rem!important;
     }
-
-    #platformContainerSteam::before,
-    #platformContainerSteam::after {
-        margin-left: 188px!important;
-    }
-
-    #platformContainerPS::before,
-    #platformContainerPS::after {
-        margin-inline: 100px!important;
-    }
-
-    #platformContainerX::before,
-    #platformContainerX::after {
-        margin-right: 188px!important;
-    }
 }
 
 @media (max-width: 1199px) {
     .footerFeedback {
         width: 43%!important;
-    }
-
-    #platformContainerSteam::before,
-    #platformContainerSteam::after {
-        margin-left: 158px!important;
-    }
-
-    #platformContainerPS::before,
-    #platformContainerPS::after {
-        margin-inline: 80px!important;
-    }
-
-    #platformContainerX::before,
-    #platformContainerX::after {
-        margin-right: 158px!important;
     }
 }
 
@@ -282,6 +252,10 @@ header {
     .trailer {
         width: 885px!important;
         height: 497.81px!important;
+    }
+
+    .con4 {
+        min-height: 661px!important;
     }
 }
 
@@ -296,11 +270,11 @@ header {
     }
 
     #discord {
-        margin-left: 0px!important;
+        margin-right: 0px!important;
     }
 
-    #buynow {
-        margin-left: 0px!important;
+    #presskit {
+        margin-right: 0px!important;
     }
     
     .footerFeedback {
@@ -309,21 +283,6 @@ header {
 
     #ediContainer::before {
         inset: 0.4rem!important;
-    }
-
-    #platformContainerSteam::before,
-    #platformContainerSteam::after {
-        margin-left: 118px!important;
-    }
-
-    #platformContainerPS::before,
-    #platformContainerPS::after {
-        margin-inline: 60px!important;
-    }
-
-    #platformContainerX::before,
-    #platformContainerX::after {
-        margin-right: 118px!important;
     }
 }
 
@@ -360,6 +319,10 @@ header {
         background-position-y: 100px!important
     }
 
+    .con4 {
+        min-height: 554.98px!important;
+    }
+
     .con5 {
         background-position-x: -120px!important;
         background-position-y: 390px!important
@@ -375,7 +338,7 @@ header {
     }
 
     .con2, .con3, .con5, .con6, .con7 {
-        background-image: url(../../assets/content/ContentBG_Mobile.png)!important;
+        background-image: url(../../assets/content/holdfast_map_bg.png)!important;
     }
 
     .topgap {
@@ -385,11 +348,6 @@ header {
     .mobImg {
         display: flex!important;
     }
-
-    /* #editions img {
-        width: 85%!important;
-        margin-bottom: 20px;
-    } */
 
     .selEd {
         width: 100%!important;
@@ -421,21 +379,6 @@ header {
         width: 100%!important;
         justify-content: center!important;
         margin-top: 5px!important;
-    }
-
-    #platformContainerSteam::before,
-    #platformContainerSteam::after {
-        margin-left: 117px!important;
-    }
-
-    #platformContainerPS::before,
-    #platformContainerPS::after {
-        margin-inline: 60px!important;
-    }
-
-    #platformContainerX::before,
-    #platformContainerX::after {
-        margin-right: 117px!important;
     }
 }
 
@@ -470,25 +413,14 @@ header {
         inset: 0.7rem!important;
     }
 
-    #platformContainerSteam::before,
-    #platformContainerSteam::after {
-        margin-left: 129px!important;
-        margin-right: 129px!important;
-        margin-bottom: 33px!important;
+    #platformContainerSteam{
+        float: none!important;
+        margin: auto!important;
     }
 
-    #platformContainerPS::before,
-    #platformContainerPS::after {
-        margin-left: 129px!important;
-        margin-right: 129px!important;
-        margin-bottom: 33px!important;
-    }
-
-    #platformContainerX::before,
-    #platformContainerX::after {
-        margin-left: 129px!important;
-        margin-right: 129px!important;
-        margin-bottom: 33px!important;
+    #platformContainerX {
+        float: none!important;
+        margin: auto!important;
     }
 }
 
@@ -584,61 +516,11 @@ header {
     }
 }
 
-@media (max-width: 525px) {
-    #platformContainerSteam::before,
-    #platformContainerSteam::after,
-    #platformContainerPS::before,
-    #platformContainerPS::after,
-    #platformContainerX::before,
-    #platformContainerX::after {
-        margin-left: 125px!important;
-        margin-right: 125px!important;
-        margin-bottom: 30px!important;
-    }
-}
-
 @media (max-width: 500px) {
     #ediContainer::before,
     #ediContainer::after {
         margin-bottom: 10px;
         inset: 1.2rem!important;
-    }
-
-    #platformContainerSteam::before,
-    #platformContainerSteam::after,
-    #platformContainerPS::before,
-    #platformContainerPS::after,
-    #platformContainerX::before,
-    #platformContainerX::after {
-        margin-left: 119px!important;
-        margin-right: 119px!important;
-        margin-bottom: 29px!important;
-    }
-}
-
-@media (max-width: 475px) {
-    #platformContainerSteam::before,
-    #platformContainerSteam::after,
-    #platformContainerPS::before,
-    #platformContainerPS::after,
-    #platformContainerX::before,
-    #platformContainerX::after {
-        margin-left: 112px!important;
-        margin-right: 112px!important;
-        margin-bottom: 27px!important;
-    }
-}
-
-@media (max-width: 450px) {
-    #platformContainerSteam::before,
-    #platformContainerSteam::after,
-    #platformContainerPS::before,
-    #platformContainerPS::after,
-    #platformContainerX::before,
-    #platformContainerX::after {
-        margin-left: 107px!important;
-        margin-right: 107px!important;
-        margin-bottom: 26px!important;
     }
 }
 
@@ -647,10 +529,6 @@ header {
         width: 335px!important;
         height: 188px!important;
     }
-
-    /* .mainWatchTrailer {
-        margin-bottom: 10px!important;
-    } */
 
     .mainButtonsContainer {
         width: 70%!important;
@@ -669,43 +547,6 @@ header {
         margin-bottom: 10px;
         inset: 1rem!important;
     }
-
-    #platformContainerSteam::before,
-    #platformContainerSteam::after,
-    #platformContainerPS::before,
-    #platformContainerPS::after,
-    #platformContainerX::before,
-    #platformContainerX::after {
-        margin-left: 100px!important;
-        margin-right: 100px!important;
-        margin-bottom: 25px!important;
-    }
-}
-
-@media (max-width: 400px) {
-    #platformContainerSteam::before,
-    #platformContainerSteam::after,
-    #platformContainerPS::before,
-    #platformContainerPS::after,
-    #platformContainerX::before,
-    #platformContainerX::after {
-        margin-left: 95px!important;
-        margin-right: 95px!important;
-        margin-bottom: 23px!important;
-    }
-}
-
-@media (max-width: 375px) {
-    #platformContainerSteam::before,
-    #platformContainerSteam::after,
-    #platformContainerPS::before,
-    #platformContainerPS::after,
-    #platformContainerX::before,
-    #platformContainerX::after {
-        margin-left: 88px!important;
-        margin-right: 88px!important;
-        margin-bottom: 21px!important;
-    }
 }
 
 @media (max-width: 360px) {
@@ -717,32 +558,6 @@ header {
     #ediContainer::after {
         margin-bottom: 10px;
         inset: 0.9rem!important;
-    }
-}
-
-@media (max-width: 350px) {
-    #platformContainerSteam::before,
-    #platformContainerSteam::after,
-    #platformContainerPS::before,
-    #platformContainerPS::after,
-    #platformContainerX::before,
-    #platformContainerX::after {
-        margin-left: 82px!important;
-        margin-right: 82px!important;
-        margin-bottom: 19px!important;
-    }
-}
-
-@media (max-width: 330px) {
-    #platformContainerSteam::before,
-    #platformContainerSteam::after,
-    #platformContainerPS::before,
-    #platformContainerPS::after,
-    #platformContainerX::before,
-    #platformContainerX::after {
-        margin-left: 77px!important;
-        margin-right: 77px!important;
-        margin-bottom: 19px!important;
     }
 }
 
@@ -831,7 +646,7 @@ header {
 }
 
 #platforms img {
-    width: 50%;
+    width: 100%;
 }
 
 .pointer {
@@ -878,7 +693,7 @@ header {
 
 .con4 {
     background-image: url(../../assets/content/holdfast_map_bg.png);
-    /* min-height: 833.63px; */
+    min-height: 833.63px;
 }
 
 .con5 {
@@ -929,23 +744,42 @@ header {
     border-radius: 1em;
 }
 
-#discord {
-    margin-left: -20px;
+.topNav {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    font-family: Cinzel;
+    font-weight: 650;
 }
 
 #buynow {
+    color: rgba(201, 166, 120);
+}
+
+#buynow:hover {
+    color: rgba(0, 0, 0, 0);
+    background: linear-gradient(to right, rgba(225, 166, 4), rgba(201, 166, 120), #d2ad50);
+    background-size: 400%;
+    animation: gradient-shift 1.2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: color .2s ease-in-out;
+}
+
+.topNav:hover {
+    color: white;
+}
+
+#presskit {
+    margin-right: 20px;
+}
+
+#discord {
+    margin-right: 20px;
+}
+
+/* #buynow {
     margin-left: -15px;
-}
-
-.navbuy {
-    background-color: rgba(185, 0, 0, 0.7);
-    padding: 8px 10px;
-    margin-left: 2px;
-}
-
-.navbuy:hover {
-    background-color: rgba(185, 0, 0, 0.9)!important;
-}
+} */
 
 .navbrand {
     height: 32px;
@@ -1068,6 +902,12 @@ header {
     100% { --gradient-angle: 360deg; }
 }
 
+@keyframes gradient-shift {
+    0% { background-position: left; }
+    50% { background-position: right; }
+    100% { background-position: left; }
+}
+
 #ediContainer {
     position: relative;
     z-index: 1;
@@ -1106,6 +946,25 @@ header {
     top: -54px;
 }
 
+#platformContainerSteam {
+    float: right;
+}
+
+#platformContainerPS {
+    margin: auto;
+}
+
+#platformContainerX {
+    float: left;
+}
+
+#platformContainerSteam,
+#platformContainerPS,
+#platformContainerX {
+    width: 50%;
+    height: 50%;
+}
+
 #platformContainerSteam, 
 #platformContainerPS,
 #platformContainerX {
@@ -1134,7 +993,7 @@ header {
     );
     border-radius: inherit;
     animation: rotation 2s linear infinite;
-    margin-bottom: 27px;
+    margin-bottom: 26px;
 }
 
 #platformContainerSteam::after,
@@ -1150,22 +1009,6 @@ header {
 #platformContainerPS:hover::before,
 #platformContainerX:hover::before {
     display: flex;
-}
-
-#platformContainerSteam::before,
-#platformContainerSteam::after {
-    margin-left: 218px;
-}
-
-#platformContainerPS::before,
-#platformContainerPS::after {
-    margin-inline: 110px;
-}
-
-#platformContainerX::before,
-#platformContainerX::after {
-    margin-right: 218px;
-    margin-left: 2px;
 }
 
 #elfl {
