@@ -128,13 +128,13 @@ header {
 }
 
 .footerMenu a {
-    color: white;
+    color: whitesmoke;
     font-weight: 500;
     text-decoration: none;
 }
 
 .footerMenu a:hover {
-    color: #d2ad50;
+    color: rgba(201, 166, 120);
 }
 
 .footerFeedback {
@@ -147,12 +147,12 @@ header {
 }
 
 .footerFeedback a {
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
 }
 
 .footerFeedback a:hover {
-    color: #d2ad50;
+    color: rgba(201, 166, 120);
 }
 
 .hidden {
@@ -171,11 +171,11 @@ header {
 }
 
 .footerSocials a {
-    color: rgba(78, 77, 76, 0.8);
+    color: whitesmoke;
 }
 
 .footerSocials a:hover {
-    color: #d2ad50;
+    color: rgba(201, 166, 120);
 }
 
 .footBrand {
