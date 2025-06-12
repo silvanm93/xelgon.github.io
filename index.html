@@ -391,7 +391,7 @@
                             </div>
                             <div>© 2025 Anvil Game Studios</div>
                             <div class="footerMenu bottom">
-                                <a href="https://holdfastgame.com/privacy-policy">PRIVACY</a>
+                                <a href="/privacy-policy.html">PRIVACY</a>
                                 <a href="">TERMS</a>
                             </div>
                         </div>
@@ -403,6 +403,113 @@
             </div>
         </section>
     </div>     
+
+    <!-- 1. Consent Banner HTML -->
+	<div id="cookie-banner">
+        <span>
+            This site uses cookies for analytics. 
+            <a href="/privacy-policy.html" style="color: rgba(201, 166, 120);">Learn more</a>
+        </span>
+        <div id="cookie-banner-buttons">
+            <button id="accept-cookies">Accept</button>
+            <button id="decline-cookies">Decline</button>
+        </div>
+	</div>
+
+	<!-- 2. Consent Mode Setup and gtag.js Loading -->
+	<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        // 2a. Set default consent to denied for all storage types and wait for update up to 2000ms
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'functionality_storage': 'denied',
+            'personalization_storage': 'denied',
+            'security_storage': 'granted',  // security storage is necessary, no consent needed
+            'wait_for_update': 2000
+        });
+
+        // 2b. Set ads_data_redaction to true to limit ad data when ad_storage is denied
+        gtag('set', 'ads_data_redaction', true);
+
+        // 2c. Load Google Analytics script AFTER default consent is set
+        var gaScript = document.createElement('script');
+        gaScript.async = true;
+        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-0QEK47CK9D';
+        document.head.appendChild(gaScript);
+
+        gaScript.onload = function() {
+            gtag('js', new Date());
+            gtag('config', 'G-0QEK47CK9D');
+        };
+
+        // 3. Consent banner logic
+        var banner = document.getElementById('cookie-banner');
+        var acceptBtn = document.getElementById('accept-cookies');
+        var declineBtn = document.getElementById('decline-cookies');
+
+        // Check stored consent on page load
+        var consent = localStorage.getItem('ccn2');
+
+        if (consent === 'accepted') {
+            // User previously accepted: update consent to granted and hide banner
+            banner.style.display = 'none';
+            gtag('consent', 'update', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'granted',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied',
+                'functionality_storage': 'denied',
+                'personalization_storage': 'denied',
+                'security_storage': 'denied'
+            });
+            // Also disable ads_data_redaction since consent is granted
+            gtag('set', 'ads_data_redaction', false);
+        } else if (consent === 'declined') {
+        // User previously declined: keep default denied consent and hide banner
+            banner.style.display = 'none';
+        } else {
+        // No stored consent: show banner
+            banner.style.display = 'flex';
+        }
+
+        // Accept button click handler
+        acceptBtn.onclick = function() {
+        localStorage.setItem('ccn2', 'accepted');
+        banner.style.display = 'none';
+            gtag('consent', 'update', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'granted',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied',
+                'functionality_storage': 'denied',
+                'personalization_storage': 'denied',
+                'security_storage': 'denied'
+            });
+            gtag('set', 'ads_data_redaction', false);
+        };
+
+        // Decline button click handler
+        declineBtn.onclick = function() {
+            localStorage.setItem('ccn2', 'declined');
+            banner.style.display = 'none';
+            // Consent remains denied by default, no need to update
+            gtag('consent', 'update', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'denied',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied',
+                'functionality_storage': 'denied',
+                'personalization_storage': 'denied',
+                'security_storage': 'denied'
+            });
+            gtag('set', 'ads_data_redaction', true);
+        };
+	</script>
 
     <script type="text/javascript">
         var player;
