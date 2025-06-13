@@ -53,10 +53,7 @@
     <header>
         <div class="overlay"></div>
 
-        <video id="bgVideo" playsinline autoplay muted loop>
-            <source src="assets/vids/background.webm" type="video/mp4">
-            <source src="assets/vids/background_trailer_720p.mp4" type="video/mp4">
-        </video>
+        <video id="bgVideo" playsinline autoplay muted loop></video>
 
         <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -513,11 +510,17 @@
 	</script>
 
     <script type="text/javascript">
-        var player;
-
-        function onYouTubePlayerAPIReady() {
-            player = new YT.Player('video');
-        }
+        $(document).ready(function() {
+            var screen = $(window).width();
+            var vid = $('#bgVideo')[0];
+            if (screen < 800) {
+                vid.setAttribute('src', 'assets/vids/background_trailer_720p.mp4');
+                vid.setAttribute('type', 'video/mp4');
+            } else {
+                vid.setAttribute('src', 'assets/vids/background.webm');
+                vid.setAttribute('type', 'video/mp4');
+            }
+        });
 
         function selectPlatform(edition) {
             $('#selectPlatform').attr('src', 'assets/EnlistToday_Button_On_SELECTPLATFORM.png');
@@ -565,15 +568,26 @@
             $('#backArrow').addClass('hidden');
         }
 
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            player.pauseVideo();
-            $('#bgVideo')[0].play();
-        });
+        var player;
+ 
+		$('#videoModal').on('show.bs.modal', function (e) {
+			if (!player) {
+				player = new YT.Player('video');
+			}
+		
+			var $iframe = $('#video');
+			if (!$iframe.attr('src')) {
+				$iframe.attr('src', $iframe.data('src'));
+			}
+			
+			$('#bgVideo')[0].pause();
+		});
 
-        $('#videoModal').on('show.bs.modal', function (e) {
-            player.playVideo();
-            $('#bgVideo')[0].pause();
-        });
+		$('#videoModal').on('hide.bs.modal', function (e) {
+			var $iframe = $('#video');
+			$iframe.attr('src', '');
+			$('#bgVideo')[0].play();
+		});
     </script>
 </body>
 </html>
