@@ -297,6 +297,7 @@ header {
     }
 
     .con1 {
+        background-image: url(../../assets/content/Main_Banner_Mobile.png)!important;
         background-repeat: no-repeat!important;
         text-align: center!important;
         background-size: inherit!important;
@@ -699,9 +700,9 @@ header {
 }
 
 .con1 {
-    background-image: url(../../assets/content/Main_Banner_Mobile.png);
+    background-image: url(../../assets/content/Main_Banner.png);
     min-height: 750px;
-    background-size: auto;
+    background-size: cover;
 }
 
 .con2 {
