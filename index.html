@@ -53,7 +53,7 @@
     <header>
         <div class="overlay"></div>
 
-        <video id="bgVideo" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <video id="bgVideo" playsinline autoplay muted loop>
             <source src="assets/vids/background.webm" type="video/mp4">
         </video>
 
@@ -64,7 +64,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <div class="trailer embed-responsive embed-responsive-16by9">
-                        <iframe id="video" class="embed-responsive-item" src="https://www.youtube.com/embed/MkA6FUNHatM?enablejsapi=1"
+                        <iframe loading="lazy" id="video" class="embed-responsive-item" src="https://www.youtube.com/embed/MkA6FUNHatM?enablejsapi=1"
                             allow="autoplay; web-share" allowfullscreen>
                         </iframe>
                     </div>
@@ -513,7 +513,7 @@
 
     <script type="text/javascript">
         var player;
-        
+
         function onYouTubePlayerAPIReady() {
             player = new YT.Player('video');
         }
