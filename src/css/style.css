@@ -4,6 +4,7 @@ html, body {
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 body {
