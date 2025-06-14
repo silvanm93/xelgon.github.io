@@ -159,17 +159,18 @@ header {
 
 .footerSocials a {
     color: whitesmoke;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 25px;
+    display: inline-flex;
+}
+
+.footerSocials a:last-child {
+    margin-right: 0px;
 }
 
 .footerSocials a:hover {
     color: rgba(201, 166, 120);
-}
-
-.footBrand {
-    padding-right: 0%;
-    font-weight: bold;
-    justify-content: center;
-    display: flex;
 }
 
 .footerContainer {
@@ -188,25 +189,6 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     border-radius: 0.3rem;
-}
-
-@media only screen and (max-width: 578px) {
-    .footBrand {
-      width: 50%;
-      justify-content: center;
-      display: flex;
-      padding-left: 0;
-    }
-
-    .footerSocials {
-        margin-inline: auto;
-        width: 50%;
-    }
-}
-
-.bi {
-    margin-right: 10px;
-    font-size: 25px;
 }
 
 @media (min-width: 2400px) {
@@ -325,7 +307,8 @@ header {
     }
 
     .hfLogoShadow {
-        width: auto!important;
+        width: 95%!important;
+        height: auto;
         margin-top: 25%!important;
     }
 }
@@ -359,6 +342,10 @@ header {
     .footerContainer {
         justify-content: center!important;
         padding-right: 0px!important;
+    }
+
+    .footerMenu a {
+        margin-right: 0.2rem!important;
     }
 
     .footerCopyright {
@@ -455,8 +442,9 @@ header {
     }
 
     .hfLogoShadow {
-        width: auto!important;
-        margin-top: 25%!important;
+        width: 90%!important;
+        height: auto;
+        margin-top: 20%!important;
     }
 
     .mainButtons {
@@ -544,7 +532,7 @@ header {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 428px) {
     .trailer {
         width: 335px!important;
         height: 188px!important;
