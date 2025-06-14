@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2">
     <meta name="description" content="Fight on multiple fronts in Holdfast: Nations At War - A multiplayer first and third-person shooter set during the great Napoleonic Era and WW1. Charge into battle with over 150 players per server!">
     <meta name="keywords" content="Holdfast, Holdfast Game, Holdfast: Nations At War, Holdfast: NaW, HF, Frontlines, Frontlines WW1, Anvil Game Studios, AGS, Napoleonic Warfare, Napoleonic Wars, Napoleonic Era, Shooter, Naval Combat, Age of Sail, Sail Ships, Line battles, Musket, Napoleonic, Napoleon, British Empire, French Empire, History, Historical, Reenectment, Multiplayer, Massive Game Battles, Game, Steam, PC, Consoles, Xbox, PlayStation, 1800, 19th Century, Holdfast Discord">
     <meta name="author" content="Anvil Game Studios">
@@ -10,18 +10,6 @@
     <meta name="application-name" content="Holdfast: Nations at War">
 
     <title>Holdfast: Nations at War</title>
-
-    <link rel="preload" href="assets/content/Main_Banner.webp" as="image" fetchpriority="high"/>
-    <link rel="preload" href="assets/nav/navbar_anvil_logo.webp" as="image"/>
-    <link rel="preload" href="assets/nav/navbar_bg_mob.webp" as="image"/>
-    <link rel="preload" href="assets/web-watch-trailer.webp" as="image"/>
-    <link rel="preload" href="assets/web-watch-trailer_on-hover.webp" as="image"/>
-    <link rel="preload" href="assets/web-wishlist.webp" as="image"/>
-    <link rel="preload" href="assets/web-wishlist_on-hover.webp" as="image"/>
-    <link rel="preload" href="assets/Anvil_Game_Studios_Logo_Large_White.webp" as="image"/>
-    <link rel="preload" href="assets/EnlistToday_Whole_Mobile.webp" as="image"/>
-    <link rel="preload" href="assets/EnlistToday_Button_On_SELECTVERSION.webp" as="image"/>
-    <link rel="preload" href="assets/EnlistToday_Button_Off_SELECTPLATFORM.webp" as="image"/>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
@@ -96,14 +84,14 @@
                             <div class="mainButtonsContainer">
                                 <div class="mainWatchTrailer">
                                     <a class="pointer">
-                                        <img id="trailerOff" class="before" src="assets/web-watch-trailer.webp" loading="lazy" />
-                                        <img id="trailerOn" data-bs-toggle="modal" data-bs-target="#videoModal" class="after" src="assets/web-watch-trailer_on-hover.webp" loading="lazy" />
+                                        <img id="trailerOff" alt="watch-trailer" class="before" src="assets/web-watch-trailer.webp" loading="lazy" />
+                                        <img id="trailerOn" alt="watch-trailer" data-bs-toggle="modal" data-bs-target="#videoModal" class="after" src="assets/web-watch-trailer_on-hover.webp" loading="lazy" />
                                     </a>
                                 </div>
                                 <div class="mainPlayHoldfast">
                                     <a href="#enlist">
-                                        <img id="playOff" class="before" src="assets/web-wishlist.webp" loading="lazy" />
-                                        <img id="playOn" class="after" src="assets/web-wishlist_on-hover.webp" loading="lazy" />
+                                        <img id="playOff" alt="wishlist-now" class="before" src="assets/web-wishlist.webp" loading="lazy" />
+                                        <img id="playOn" alt="wishlist-now" class="after" src="assets/web-wishlist_on-hover.webp" loading="lazy" />
                                     </a>
                                 </div>
                             </div>
@@ -124,8 +112,8 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="enlist">
-                            <img id="enlistToday" src="assets/EnlistToday_Whole.webp" style="width: 100%;" loading="lazy" />
-                            <img id="enlistTodayMob" src="assets/EnlistToday_Whole_Mobile.webp" style="width: 100%; display: none;" loading="lazy" />
+                            <img id="enlistToday" alt="enlist-today" src="assets/EnlistToday_Whole.webp" style="width: 100%;" loading="lazy" />
+                            <img id="enlistTodayMob" alt="enlist-today" src="assets/EnlistToday_Whole_Mobile.webp" style="width: 100%; display: none;" loading="lazy" />
                         </div>
                     </div>
                 </div>
@@ -133,9 +121,9 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 selEd">
                         <div class="selectors">
-                            <img id="selectVersion" src="assets/EnlistToday_Button_On_SELECTVERSION.webp" style="width: 30%;" loading="lazy" />
+                            <img id="selectVersion" alt="select-version" src="assets/EnlistToday_Button_On_SELECTVERSION.webp" style="width: 30%;" loading="lazy" />
                             <span class="enlistSeparator">--</span>
-                            <img id="selectPlatform" src="assets/EnlistToday_Button_Off_SELECTPLATFORM.webp" style="width: 30%;" loading="lazy" />
+                            <img id="selectPlatform" alt="select-platform" src="assets/EnlistToday_Button_Off_SELECTPLATFORM.webp" style="width: 30%;" loading="lazy" />
                         </div>
                     </div>
                 </div>
@@ -143,16 +131,16 @@
                 <div class="row">
                     <div id="editions" class="container col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 visible">
                         <div id="ediContainer" class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-12" style="text-align: center; float: left;">
-                            <a href="#enlist"><img id="staEdImg" onclick="selectPlatform('sta')" src="assets/content/base_edition.webp" loading="lazy"></a>
+                            <a href="#enlist"><img id="staEdImg" alt="holdfast-standard-edition" onclick="selectPlatform('sta')" src="assets/content/base_edition.webp" loading="lazy"></a>
                         </div>
                         <div id="ediContainer" class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-12" style="text-align: center; float: left;">
-                            <a href="#enlist"><img id="collEdImg" onclick="selectPlatform('col')" src="assets/content/collectors_edition.webp" loading="lazy"></a>
+                            <a href="#enlist"><img id="collEdImg" alt="holdfast-collectors-edition" onclick="selectPlatform('col')" src="assets/content/collectors_edition.webp" loading="lazy"></a>
                         </div>
                         <div id="ediContainer" class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-12" style="text-align: center; float: left;">
-                            <a href="#enlist"><img id="napoEdImg" onclick="selectPlatform('nap')" src="assets/content/napoleonic_edition.webp" loading="lazy"></a>
+                            <a href="#enlist"><img id="napoEdImg" alt="holdfast-napoleonic-edition" onclick="selectPlatform('nap')" src="assets/content/napoleonic_edition.webp" loading="lazy"></a>
                         </div>
                         <div id="ediContainer" class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-12" style="text-align: center; float: left;">
-                            <a href="#enlist"><img id="warEdImg" onclick="selectPlatform('war')" src="assets/content/war_edition.webp" loading="lazy"></a>
+                            <a href="#enlist"><img id="warEdImg" alt="holdfast-war-edition" onclick="selectPlatform('war')" src="assets/content/war_edition.webp" loading="lazy"></a>
                         </div>
                     </div>
                 </div>
@@ -162,21 +150,21 @@
                         <div id="ps" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-12 triAlign enlistPs">
                             <div class="platformContainer">
                                 <div id="platformContainerPS">
-                                    <a id="platPS"><img id="platPSImg" src="assets/content/platform_ps_wishlist_hover.webp" loading="lazy"></a>
+                                    <a id="platPS"><img id="platPSImg" alt="platform-playstation" src="assets/content/platform_ps_wishlist_hover.webp" loading="lazy"></a>
                                 </div>
                             </div>
                         </div>
                         <div id="xbox" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-12 triAlign enlistXbox">
                             <div class="platformContainer">
                                 <div id="platformContainerX">
-                                    <a id="platXbox"><img id="platXboxImg" src="assets/content/platform_xbox_wishlist_hover.webp" loading="lazy"></a>
+                                    <a id="platXbox"><img id="platXboxImg" alt="platform-xbox" src="assets/content/platform_xbox_wishlist_hover.webp" loading="lazy"></a>
                                 </div>
                             </div>
                         </div>
                         <div id="steam" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-12 triAlign enlistSteam">
                             <div class="platformContainer">
                                 <div id="platformContainerSteam">
-                                    <a id="platSteam"><img id="platSteamImg" src="assets/content/platform_steam_on_hover.webp" loading="lazy"></a>
+                                    <a id="platSteam"><img id="platSteamImg" alt="platform-steam" src="assets/content/platform_steam_on_hover.webp" loading="lazy"></a>
                                 </div>
                             </div>
                         </div>
@@ -192,10 +180,10 @@
                 </div>
                 <div id="enlistTodayFooter" class="enlistTodayFooter">
                     <div class="platformsCont">
-                        <img id="platform_steam" src="assets/steam_icon.webp" loading="lazy" />
-                        <img id="platform_steamdeck" src="assets/steam_deck_icon.webp" loading="lazy" />
-                        <img id="platform_ps" src="assets/playstation_icon.webp" loading="lazy" />
-                        <img id="platform_xbox" src="assets/xbox_icon.webp" loading="lazy" />
+                        <img id="platform_steam" alt="steam-icon" src="assets/steam_icon.webp" loading="lazy" />
+                        <img id="platform_steamdeck" alt="steam-deck-icon" src="assets/steam_deck_icon.webp" loading="lazy" />
+                        <img id="platform_ps" alt="ps-icon" src="assets/playstation_icon.webp" loading="lazy" />
+                        <img id="platform_xbox" alt="xbox-icon" src="assets/xbox_icon.webp" loading="lazy" />
                     </div>
                 </div>
                 <pre></pre>
@@ -206,7 +194,7 @@
     <section class="d-flex justify-content-center align-items-center"> 
         <div class="w-100 h-100 contentBG con2">
             <div class="mobImg">
-                <img src="assets/content/HoldfastCommunity_Banner_Mobile.webp" class="imgFade" width="100%" loading="lazy" />
+                <img src="assets/content/HoldfastCommunity_Banner_Mobile.webp" alt="holdfast-community" class="imgFade" width="100%" loading="lazy" />
             </div>
             <div class="container wide">
                 <div class="topgap">
@@ -235,7 +223,7 @@
     <section class="d-flex justify-content-center align-items-center"> 
         <div class="w-100 h-100 contentBG con3">
             <div class="mobImg">
-                <img src="assets/content/BattleAcrossEras_Banner_Mobile.webp" class="imgFade" width="100%" loading="lazy" />
+                <img src="assets/content/BattleAcrossEras_Banner_Mobile.webp" alt="battle-across-eras" class="imgFade" width="100%" loading="lazy" />
             </div>
             <div class="container wide">
                 <div class="topgap">
@@ -264,7 +252,7 @@
     <section class="d-flex justify-content-center align-items-center"> 
         <div class="w-100 h-100 contentBG con5">
             <div class="mobImg">
-                <img src="assets/content/BattlefieldRoles_Banner_Mobile.webp" class="imgFade" width="100%" loading="lazy" />
+                <img src="assets/content/BattlefieldRoles_Banner_Mobile.webp" alt="battlefield-roles" class="imgFade" width="100%" loading="lazy" />
             </div>
             <div class="container wide">
                 <div class="topgap">
@@ -293,7 +281,7 @@
     <section class="d-flex justify-content-center align-items-center"> 
         <div class="w-100 h-100 contentBG con6">
             <div class="mobImg">
-                <img src="assets/content/Customization&Progression_Banner_Mobile.webp" class="imgFade" width="100%" loading="lazy" />
+                <img src="assets/content/Customization&Progression_Banner_Mobile.webp" alt="customisation-and-progression" class="imgFade" width="100%" loading="lazy" />
             </div>
             <div class="container wide">
                 <div class="topgap">
@@ -322,7 +310,7 @@
     <section class="d-flex justify-content-center align-items-center"> 
         <div class="w-100 h-100 contentBG con7">
             <div class="mobImg">
-                <img src="assets/content/WarringNations_Banner_Mobile.webp" class="imgFade" width="100%" loading="lazy" />
+                <img src="assets/content/WarringNations_Banner_Mobile.webp" alt="warring-nations" class="imgFade" width="100%" loading="lazy" />
             </div>
             <div class="container wide">
                 <div class="topgap">
@@ -357,22 +345,22 @@
                         <div class="row fRow">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
                                 <div class="footerSocials">
-                                    <a class="" href="https://discord.com/invite/holdfastgame">
+                                    <a class="" aria-label="Join Holdfast's Discord." href="https://discord.com/invite/holdfastgame">
                                         <span class="bi bi-discord"></span>
                                     </a>
-                                    <a class="" href="https://www.tiktok.com/@anvilgamestudios">
+                                    <a class="" aria-label="Watch Holdfast's Tiktoks." href="https://www.tiktok.com/@anvilgamestudios">
                                         <span class="bi bi-tiktok"></span>
                                     </a>
-                                    <a class="" href="https://www.reddit.com/r/holdfastgame/">
+                                    <a class="" aria-label="Visit Holdfast's Reddit." href="https://www.reddit.com/r/holdfastgame/">
                                         <span class="bi bi-reddit"></span>
                                     </a>
-                                    <a class="" href="https://www.youtube.com/anvilgamestudio">
+                                    <a class="" aria-label="Visit Holdfast's Youtube channel." href="https://www.youtube.com/anvilgamestudio">
                                         <span class="bi bi-youtube"></span>
                                     </a>
-                                    <a class="" href="https://www.facebook.com/holdfastgame/">
+                                    <a class="" aria-label="Visit Holdfast's Facebook." href="https://www.facebook.com/holdfastgame/">
                                         <span class="bi bi-facebook"></span>
                                     </a>
-                                    <a class="" href="https://x.com/holdfastgame">
+                                    <a class="" aria-label="Visit Holdfast's X" href="https://x.com/holdfastgame">
                                         <span class="bi bi-twitter-x"></span>
                                     </a>
                                 </div>
@@ -393,13 +381,13 @@
                         </div>
                         <div class="footerCopyright">
                             <div class="footerMenu">
-                                <a href="https://presskit.anvilgamestudios.com/">PRESSKIT</a>
-                                <a href="https://discord.com/invite/holdfastgame">DISCORD</a>
-                                <a href="#enlist">BUY NOW</a>
+                                <a href="https://presskit.anvilgamestudios.com/" aria-label="Visit Holdfast's Presskit.">PRESSKIT</a>
+                                <a href="https://discord.com/invite/holdfastgame" aria-label="Join Holdfast's Discord.">DISCORD</a>
+                                <a href="#enlist" aria-label="Enlist in Holdfast.">BUY NOW</a>
                             </div>
                             <div>© 2025 Anvil Game Studios</div>
                             <div class="footerMenu bottom">
-                                <a href="/privacy-policy.html">PRIVACY</a>
+                                <a href="/privacy-policy.html" aria-label="Learn more about the privacy policies.">PRIVACY</a>
                                 <a href="">TERMS</a>
                             </div>
                         </div>
@@ -416,7 +404,7 @@
 	<div id="cookie-banner">
         <span>
             This site uses cookies for analytics. 
-            <a href="/privacy-policy.html" style="color: rgba(201, 166, 120);">Learn more</a>
+            <a href="/privacy-policy.html" aria-label="Learn more about the privacy policies." style="color: rgba(201, 166, 120);">Learn more</a>
         </span>
         <div id="cookie-banner-buttons">
             <button id="accept-cookies">Accept</button>

@@ -4,7 +4,7 @@ html, body {
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
-    background: rgba(0, 0, 0, 0.5)!important;
+    background: rgba(0, 0, 0)!important;
 }
 
 body {
@@ -274,15 +274,7 @@ header {
     }
 }
 
-@media (max-width: 768px) {
-    .maincontent {
-        min-height: 470px!important;
-    }
-
-    .mainButtons {
-        margin-left: 35px!important;
-    }
-
+@media (max-width: 884px) {
     .con2, .con3, .con4, .con5, .con6, .con7 {
         background-repeat: no-repeat!important;
         text-align: center!important;
@@ -295,17 +287,14 @@ header {
         text-align: center!important;
         background-size: inherit!important;
         background-position: center!important;
-        min-height: 0px!important;
     }
 
     .con2 {
         background-position-x: -91px!important;
-        background-position-y: 200px!important;
     }
 
     .con3 {
         background-position-x: -140px!important;
-        background-position-y: 100px!important
     }
 
     .con4 {
@@ -314,7 +303,6 @@ header {
 
     .con5 {
         background-position-x: -120px!important;
-        background-position-y: 390px!important
     }
 
     .con6 {
@@ -323,7 +311,6 @@ header {
 
     .con7 {
         background-position-x: -180px!important;
-        background-position-y: 299px!important;
     }
 
     .con2, .con3, .con5, .con6, .con7 {
@@ -336,6 +323,21 @@ header {
 
     .mobImg {
         display: flex!important;
+    }
+
+    .hfLogoShadow {
+        width: auto!important;
+        margin-top: 25%!important;
+    }
+}
+
+@media (max-width: 768px) {
+    .maincontent {
+        min-height: 470px!important;
+    }
+
+    .mainButtons {
+        margin-left: 35px!important;
     }
 
     .selEd {
@@ -536,6 +538,10 @@ header {
     #ediContainer::after {
         margin-bottom: 10px;
         inset: 1.2rem!important;
+    }
+
+    .con1 {
+        min-height: 0px!important;
     }
 }
 
@@ -792,10 +798,6 @@ header {
     margin-right: 20px;
 }
 
-/* #buynow {
-    margin-left: -15px;
-} */
-
 .navbrand {
     height: 32px;
     width: 32px;
@@ -866,6 +868,7 @@ header {
 
 .imgFade {
     mask-image: linear-gradient(to bottom, black, black 25%, black 70%, transparent);
+    max-height: 453px;
 }
 
 .mobImg {
