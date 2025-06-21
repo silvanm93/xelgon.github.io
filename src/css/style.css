@@ -201,10 +201,6 @@ header {
     .footerFeedback {
         width: 48%!important;
     }
-
-    #ediContainer::before {
-        inset: 0.7rem!important;
-    }
 }
 
 @media (max-width: 1199px) {
@@ -248,10 +244,6 @@ header {
     
     .footerFeedback {
         width: 33%!important;
-    }
-
-    #ediContainer::before {
-        inset: 0.4rem!important;
     }
 }
 
@@ -381,13 +373,8 @@ header {
         opacity: 1!important;
     }
 
-    #editions img {
+    #ediContainer {
         margin-bottom: 10px;
-    }
-
-    #ediContainer::before {
-        margin-bottom: 10px;
-        inset: 0.7rem!important;
     }
 
     #platformContainerSteam{
@@ -512,21 +499,7 @@ header {
     }
 }
 
-@media (max-width: 575px) {
-    #ediContainer::before,
-    #ediContainer::after {
-        margin-bottom: 10px;
-        inset: 0.7rem!important;
-    }
-}
-
 @media (max-width: 500px) {
-    #ediContainer::before,
-    #ediContainer::after {
-        margin-bottom: 10px;
-        inset: 1.2rem!important;
-    }
-
     .con1 {
         min-height: 0px!important;
     }
@@ -549,23 +522,11 @@ header {
     .footerFeedback {
         text-align: center!important;
     }
-
-    #ediContainer::before,
-    #ediContainer::after {
-        margin-bottom: 10px;
-        inset: 1rem!important;
-    }
 }
 
 @media (max-width: 360px) {
     .enlistTodayFooter img {
         width: 35%!important;
-    }
-
-    #ediContainer::before,
-    #ediContainer::after {
-        margin-bottom: 10px;
-        inset: 0.9rem!important;
     }
 }
 
@@ -649,7 +610,7 @@ header {
 }
 
 #editions img {
-    width: 90%;
+    width: 100%;
     cursor: pointer;
 }
 
@@ -913,8 +874,16 @@ header {
     100% { background-position: left; }
 }
 
+.outerEdiCont {
+    text-align: center;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
 #ediContainer {
     position: relative;
+    width: 95%;
     z-index: 1;
 }
 
@@ -923,7 +892,7 @@ header {
     display: none;
     content: "";
     position: absolute;
-    inset: 0.9rem;
+    inset: -0.1rem;
     z-index: -1;
     background: conic-gradient(
         from var(--gradient-angle),
@@ -935,6 +904,8 @@ header {
     );
     border-radius: inherit;
     animation: rotation 5s linear infinite;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 #ediContainer::after {
@@ -953,7 +924,6 @@ header {
 
 #platformContainerSteam {
     float: left;
-    
 }
 
 #platformContainerPS {
