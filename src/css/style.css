@@ -824,15 +824,14 @@ header {
 }
 
 .modal-dialog {
-    max-width: 1280px;
+    max-width: 90vw;
+    width: 1280px;
     margin: 0px auto;
-    max-height: 100%;
+    padding-top: 1rem;
 }
 
 .modal-content {
     background-color: transparent;
-    width: auto!important;
-    margin: auto!important;
 }
 
 .modal-body {
@@ -995,7 +994,7 @@ header {
     color: #FFFFFFE6;
 }
 
-.trailer {
+/* .trailer {
     width: 1280px;
     height: 720px;
     margin: auto;
@@ -1004,7 +1003,7 @@ header {
 .trailer iframe {
     width: 100%;
     height: 100%;
-}
+} */
 
 #cookie-banner {
     position: fixed;
